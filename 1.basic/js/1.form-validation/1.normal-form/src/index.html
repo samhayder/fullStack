@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form Validation</title>
+   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body class="prose">
+   
+   <section class="form_validation w-screen py-5">
+      <div class="container w-[90vw] h-[90vh] mx-auto bg-gray-300 p-5 shadow rounded-xl">
+         <h1 class="title text-center pb-5 font-bold text-3xl">Form Validation</h1>
+
+         <div class="massage py-5 text-blue-400"></div>
+
+         <form class="flex flex-col space-y-3">
+            <input type="text" class="full_name" placeholder="Full Name">
+            <input type="text" class="user_name" placeholder="User Name">
+            <input type="email" class="email" placeholder="Email Id">
+            <input type="password" class="password" placeholder="Password">
+            <div class="agree">
+               <input type="checkbox" class="agree_check"> <a href="#" class="text-green-500">Agree to Trams & Condition</a>
+            </div>
+            <button class="submit border-2 py-3 bg-red-300 rounded-xl">Submit</button>
+         </form>
+
+         <div class="login_info text-center my-4 text-pink-800">
+            <a href="login.html">LogIn</a> / <a href="#">Signup</a>
+         </div>
+      </div>
+   </section>
+
+   <script src="./main.js"></script>
+</body>
+</html>

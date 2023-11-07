@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corporate Landing Page</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Font Awesome Kit -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- Start header -->
+    <header
+      class="header_area w-full h-auto bg-primary py-6 absolute top-0 left-0 z-50 transition-all ease-in duration-500">
+      <nav>
+        <div class="container flex items-center justify-between">
+          <!-- logo -->
+          <a href="#" class="logo inline-block">
+            <h1 class="uppercase text-2xl font-bold">
+              <span
+                class="text-white border-2 border-[#fff200] px-2 py-1 font-normal"
+                >unique</span
+              >
+              tech
+            </h1>
+          </a>
+          <!-- end of logo -->
+
+          <!-- main menu -->
+          <ul class="main_menu hidden lg:flex items-center justify-around">
+            <li>
+              <a href="#" class="nav_link">home</a>
+            </li>
+            <li>
+              <a href="#" class="nav_link">service</a>
+            </li>
+            <li>
+              <a href="#" class="nav_link">about</a>
+            </li>
+            <li>
+              <a href="#" class="nav_link">portfolio</a>
+            </li>
+            <li>
+              <a href="#" class="nav_link">academic</a>
+            </li>
+            <li>
+              <a href="#" class="nav_link">blog</a>
+            </li>
+            <li class="mt-[25px]">
+              <a href="#" class="nav_link">contact us </a>
+              <p><a href="#" class="text-[14px]">(+966- 322 322)</a></p>
+            </li>
+          </ul>
+          <!-- end of main menu -->
+
+          <!-- Hamburger menu -->
+          <div class="hamburger_menu cursor-pointer lg:hidden z-50">
+            <i
+              class="menu_icon fa-solid fa-bars p-2 border-2 border-transparent hover:border-white transition duration-300"></i>
+          </div>
+          <!-- end of Hamburger menu -->
+          <!-- Mobile menu -->
+          <ul
+            class="mobile_menu w-full h-screen bg-secondary shadow-sm bg-opacity-50 absolute inset-0 z-40 text-white text-center pt-10 space-y-5 transition ease-in duration-500">
+            <li>
+              <a id="hLink" href="#home" class="nav_link">home</a>
+            </li>
+            <li>
+              <a id="hLink" href="#service" class="nav_link">service</a>
+            </li>
+            <li>
+              <a id="hLink" href="#about" class="nav_link">about</a>
+            </li>
+            <li>
+              <a id="hLink" href="#portfolio" class="nav_link">portfolio</a>
+            </li>
+            <li>
+              <a id="hLink" href="#academic" class="nav_link">academic</a>
+            </li>
+            <li>
+              <a id="hLink" href="#blog" class="nav_link">blog</a>
+            </li>
+            <li class="">
+              <a id="hLink" href="#contact" class="nav_link">contact us </a>
+              <a href="#" class="text-[14px]">(+966- 322 322)</a>
+            </li>
+          </ul>
+          <!-- end of Mobile menu -->
+        </div>
+      </nav>
+    </header>
+    <!-- End header -->
+
+    <!-- Start homepage -->
+    <section class="homepage_area py-6 bg-primary relative flex items-center">
+      <div class="container grid lg:grid-cols-2 m-auto gap-5">
+        <!-- homepage text -->
+        <div class="homepage_text pt-16">
+          <h2 class="title uppercase text-[42px] text-[#fdfcfc] pb-8">
+            UNIQUE-TECH <br />
+            APP DEVELOPMENT
+          </h2>
+          <p class="text-white leading-relaxed pr-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit. laborum. Sed ut perspiciatis unde
+            omnis iste. natus error sit voluptatem accusantium doloremque
+            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            fugit, sed quia consequuntur magni dolores eos qui ratione.
+            voluptatem sequi. nesciunt. Neque porro quisquam est, qui dolorem
+            ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+            numquam eius modi tempora incidunt ut labore et dolore magnam
+            aliquam quaerat voluptatem.
+          </p>
+
+          <button class="btn-primary px-4 py-3 mt-8">
+            view more
+            <span class="ml-3"> <i class="fa-solid fa-paper-plane"></i></span>
+          </button>
+        </div>
+        <!-- end of homepage text -->
+
+        <!-- homepage img -->
+        <div class="homepage_img_slider flex items-center relative">
+          <div
+            class="homepage_carousel w-full h-[50vh] lg:h-full relative overflow-hidden snap-x snap-mandatory scroll-smooth">
+            <div
+              class="slider w-full h-full absolute top-0 left-0 opacity-0 activeImg transition-all ease duration-1000"
+              draggable="true">
+              <p class="text-5xl absolute top-[15%] left-[125px]">
+                Carousel One
+              </p>
+              <img
+                src="./img/homepage_img.png"
+                class="w-full h-full object-contain" />
+            </div>
+            <div
+              class="slider w-full h-full absolute top-0 left-0 opacity-0 transition-all ease duration-1000"
+              draggable="true">
+              <p class="text-5xl absolute top-[15%] left-[125px]">
+                Carousel Two
+              </p>
+              <img
+                src="./img/homepage_img.png"
+                class="w-full h-full object-contain" />
+            </div>
+            <div
+              class="slider w-full h-full absolute top-0 left-0 opacity-0 transition-all ease duration-1000"
+              draggable="true">
+              <p class="text-5xl absolute top-[15%] left-[125px]">
+                Carousel Three
+              </p>
+              <img
+                src="./img/homepage_img.png"
+                class="w-full h-full object-contain" />
+            </div>
+          </div>
+          <!-- end of carousel img -->
+
+          <ul
+            class="dots flex items-center absolute left-[50%] translate-x-[-50%] bottom-0 space-x-3">
+            <li
+              class="dotActive w-3 h-3 bg-secondary rounded-full cursor-pointer transition-all duration-300"></li>
+            <li
+              class="w-3 h-3 rounded-full bg-secondary cursor-pointer transition-all duration-300"></li>
+            <li
+              class="w-3 h-3 rounded-full bg-secondary cursor-pointer transition-all duration-300"></li>
+          </ul>
+          <!-- end of carousel dots -->
+        </div>
+        <!-- end of homepage img -->
+      </div>
+    </section>
+    <!-- End homepage -->
+
+    <!-- Start header -->
+    <!-- <section class="header_area py-6 bg-secondary"></section> -->
+    <!-- End header -->
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

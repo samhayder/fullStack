@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="prose">
+    <section
+      class="basic_info_area w-screen h-screen py-5 flex items-center justify-center">
+      <div
+        class="container w-[60vw] lg:w-[40vw] p-5 border-2 shadow rounded-xl">
+        <h3 class="title text-center">Basic information</h3>
+        <p class="text-center">Enter your birthday and gender</p>
+
+        <form class="basic_info_form py-4">
+          <div class="form_birthday grid grid-cols-3 gap-2">
+            <div class="form_group mb-4">
+              <select class="form_input form_select month" required="required">
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+              <label class="form_label">Month</label>
+            </div>
+
+            <div class="form_group mb-4">
+              <input type="number" class="form_input day" required="required" />
+              <label class="form_label">Day</label>
+            </div>
+
+            <div class="form_group mb-4">
+              <input
+                type="number"
+                class="form_input year"
+                required="required" />
+              <label class="form_label">Full Year</label>
+            </div>
+          </div>
+
+          <p class="message birthday_message text-red-500 my-0"></p>
+
+          <div class="form_group">
+            <input type="text" class="form_input gender" required="required" />
+            <label class="form_label">gender</label>
+          </div>
+
+          <p class="message gender_message text-red-500 mt-0"></p>
+
+          <div class="form_btn w-full flex justify-end">
+            <button
+              class="basicInfoNextBtn bg-blue-600 text-white px-4 py-1 rounded-md shadow delay-500 hover:bg-blue-500">
+              Next
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- <script src="main.js"></script> -->
+    <script src="basicInfo.js"></script>
+  </body>
+</html>

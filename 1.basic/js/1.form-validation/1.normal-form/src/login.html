@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body class="prose">
+  <section class="login_area w-screen h-screen py-5 flex items-center justify-center">
+    <div class="container w-[60vw] bg-gray-400 p-5">
+      <h1 class="text-center">Login Page</h1>
+
+      <div class="massage py-5 text-blue-800"></div>
+
+      <form class="login_form flex flex-col space-y-3">
+        <input type="text" class="login_user_name"  placeholder="User Name or Email ID">
+        <input type="password" class="login_password" placeholder="password">
+
+        <button class="submit border-2 py-3 bg-red-300 rounded-xl">Submit</button>
+      </form>
+
+      <div class="signup_info py-3 text-blue-300">
+        <a href="index.html" class="text-blue-500">Signup</a> / <a href="#" class="text-blue-500">Remember Password</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="login.js"></script>
+</body>
+</html>

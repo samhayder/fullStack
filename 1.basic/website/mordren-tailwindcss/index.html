@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern UI/UX</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Font Awesome Kit -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- Stat Header -->
+    <header class="header w-full sticky top-0 z-50">
+      <nav>
+        <div class="container flex items-center justify-between py-5">
+          <!-- Logo -->
+          <div class="logo font-bold text-2xl">
+            <a href="#home">Daria<span class="text-secondary">Bandha</span>.</a>
+          </div>
+          <!-- end of Logo -->
+
+          <!-- Menu -->
+          <ul
+            class="menu hidden lg:flex items-center space-x-6 text-lg capitalize">
+            <li>
+              <a href="#home">home</a>
+            </li>
+            <li>
+              <a href="#feature">feature</a>
+            </li>
+            <li>
+              <a href="#testimonial">testimonial</a>
+            </li>
+            <li>
+              <a href="#pricing">pricing</a>
+            </li>
+            <li>
+              <a href="#blog">blog</a>
+            </li>
+            <li>
+              <a href="#contact">contact</a>
+            </li>
+
+            <li>
+              <button class="btn-primary">free trail</button>
+            </li>
+          </ul>
+          <!-- end of Menu -->
+
+          <!-- Hamburger Menu -->
+          <div class="hamburger cursor-pointer lg:hidden z-50">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- Mobile Menu -->
+          <ul
+            class="hamburger_menu w-[100vw] h-[100vh] absolute inset-0 bg-primary-light text-lg capitalize text-center space-y-6 pt-16 hidden">
+            <li>
+              <a id="hLink" href="#home">home</a>
+            </li>
+            <li>
+              <a id="hLink" href="#feature">feature</a>
+            </li>
+            <li>
+              <a id="hLink" href="#testimonial">testimonial</a>
+            </li>
+            <li>
+              <a id="hLink" href="#pricing">pricing</a>
+            </li>
+            <li>
+              <a id="hLink" href="#blog">blog</a>
+            </li>
+            <li>
+              <a id="hLink" href="#contact">contact</a>
+            </li>
+
+            <li>
+              <button class="btn-primary">free trail</button>
+            </li>
+          </ul>
+          <!-- end of Hamburger Menu -->
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <main>
+      <!-- Start Hero Section -->
+      <section class="hero_area relative" id="home">
+        <!-- background style -->
+        <div class="blob_top"></div>
+        <div class="blob_bottom"></div>
+        <!-- end of background style -->
+
+        <div class="container">
+          <!-- Hero wrapper -->
+          <div
+            class="hero_wrapper w-full h-[100vh] flex flex-col md:flex-row items-center justify-center z-20">
+            <!-- Hero Text -->
+            <div class="hero_text md:w-1/2 text-center pt-10 mb-12 md:pr-10">
+              <h2 class="title py-12">awesome app for your financial</h2>
+              <p class="leading-relaxed mb-10">
+                This should be used to tell a story and let your users know a
+                little more about app and it's use, How can benefit them.
+              </p>
+              <button class="btn-primary">download app</button>
+            </div>
+            <!-- end of Hero Text -->
+
+            <!-- Hero Image -->
+            <div class="hero_img md:w-1/2">
+              <img src="./img/hero4.png" alt="" />
+            </div>
+            <!-- end of Hero Image -->
+          </div>
+          <!-- end of Hero wrapper -->
+        </div>
+      </section>
+      <!-- End Hero Section -->
+
+      <!-- Start Feature Section -->
+      <section class="feature_area py-10 bg-primary-dark" id="feature">
+        <div class="container">
+          <div class="feature_text text-center m-auto md:w-1/2">
+            <h2 class="capitalize text-secondary">our feature</h2>
+            <h2 class="title py-12">
+              easy to manage your all payment by our app
+            </h2>
+          </div>
+          <!-- end of feature text -->
+
+          <!-- feature card -->
+          <div
+            class="feature_card grid lg:grid-cols-3 md:grid-cols-2 lg:gap-5 gap-6 my-10 md:my-5 items-center">
+            <!-- card 1 -->
+            <div
+              class="card border-2 border-gray text-center py-20 px-5 rounded-2xl shadow-2xl cursor-pointer hover:font-bold">
+              <div class="card_icon text-6xl text-secondary mb-5">
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+              <h3 class="capitalize font-bold text-2xl">expense tracking</h3>
+              <p class="tracking-wider mt-5">
+                We use an application designed a testing gnoses to keep away
+              </p>
+            </div>
+            <!-- end of card 1 -->
+
+            <!-- card 2 -->
+            <div
+              class="card border-2 border-gray text-center py-20 px-5 rounded-2xl shadow-2xl cursor-pointer hover:font-bold">
+              <div class="card_icon text-6xl text-secondary mb-5">
+                <i class="fa-solid fa-chart-column"></i>
+              </div>
+              <h3 class="capitalize font-bold text-2xl">finance snapshot</h3>
+              <p class="tracking-wider mt-5">
+                We use an application designed a testing gnoses to keep away
+              </p>
+            </div>
+            <!-- end of card 2 -->
+
+            <!-- card 3 -->
+            <div
+              class="card border-2 border-gray text-center py-20 px-5 rounded-2xl shadow-2xl cursor-pointer hover:font-bold">
+              <div class="card_icon text-6xl text-secondary mb-5">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <h3 class="capitalize font-bold text-2xl">support 24/24</h3>
+              <p class="tracking-wider mt-5">
+                We use an application designed a testing gnoses to keep away
+              </p>
+            </div>
+            <!-- end of card 3 -->
+          </div>
+          <!-- end of feature card -->
+        </div>
+      </section>
+      <!-- End Feature Section -->
+
+      <!-- Start Save Cashback Section -->
+      <section
+        class="cashback_area py-10 relative flex items-center"
+        id="cashback">
+        <!-- background style -->
+        <div class="blob_top"></div>
+        <div class="blob_bottom"></div>
+        <!-- end of background style -->
+
+        <div class="containe">
+          <div class="cashback_wrapper flex flex-col md:flex-row items-center">
+            <!-- cashback img -->
+            <div class="cashback_img md:w-1/2">
+              <img src="./img/hero3.png" alt="" />
+            </div>
+            <!-- end of cashback img -->
+
+            <!-- cashback content -->
+            <div class="cashback_content md:w-1/2">
+              <div
+                class="titling md:w-1/2 md:text-left md:ml-20 text-center px-5 md:px-0">
+                <h2 class="capitalize text-secondary mb-4">saving money</h2>
+                <h2 class="title mb-6">
+                  best financing app to save your money
+                </h2>
+                <p class="mb-12">
+                  Best financing app ever in the world. Easy to use and very
+                  user friendly for mobile banking. You can control your card
+                  easily and send money some one just one click.
+                </p>
+
+                <button class="btn-primary">Read More</button>
+              </div>
+              <!-- end of titling text -->
+            </div>
+            <!-- end of cashback content -->
+          </div>
+        </div>
+      </section>
+      <!-- End Save Cashback Section -->
+
+      <!-- Start How It Work Section -->
+      <section
+        class="how_it_work_area bg-primary-light py-10 flex items-center"
+        id="how_it_work">
+        <div class="container">
+          <div class="titling text-center md:w-1/2 m-auto md:pb-12 lg:pb-20">
+            <h2 class="capitalize text-secondary mb-4">how it works</h2>
+            <h2 class="title mb-6">grow up your money saving</h2>
+          </div>
+          <!-- end of titling text -->
+
+          <div
+            class="card_wrapper grid lg:grid-cols-3 md:grid-cols-2 md:gap-10 gap-8">
+            <!-- card 01 -->
+            <div class="card text-center cursor-pointer">
+              <div
+                class="card_icon text-6xl inline-block p-6 rounded-xl hover:bg-secondary ease-in delay-200 my-6">
+                <p
+                  class="relative lg:after:content-[''] lg:after:flex lg:after:bg-[url('../img/line.png')] lg:after:absolute lg:after:top-4 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52">
+                  1
+                </p>
+              </div>
+              <h3 class="capitalize font-bold text-2xl">install the app</h3>
+              <p class="tracking-wider mt-5">
+                We use an application designed a testing gnoses to keep away
+              </p>
+            </div>
+            <!-- end of card 01 -->
+
+            <!-- card 02 -->
+            <div class="card text-center cursor-pointer">
+              <div
+                class="card_icon text-6xl inline-block p-6 rounded-xl bg-secondary hover:text-secondary hover:bg-primary-light ease-in delay-200 my-6">
+                <p
+                  class="relative lg:after:content-[''] lg:after:flex lg:after:bg-[url('../img/line-bottom.png')] lg:after:absolute lg:after:top-10 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52">
+                  2
+                </p>
+              </div>
+              <h3 class="capitalize font-bold text-2xl">setup your profile</h3>
+              <p class="tracking-wider mt-5">
+                We use an application designed a testing gnoses to keep away
+              </p>
+            </div>
+            <!-- end of card 02 -->
+
+            <!-- card 03 -->
+            <div class="card text-center cursor-pointer">
+              <div
+                class="card_icon text-6xl inline-block p-6 rounded-xl hover:bg-secondary ease-in delay-200 my-6">
+                <p>3</p>
+              </div>
+              <h3 class="capitalize font-bold text-2xl">enjoy the features!</h3>
+              <p class="tracking-wider mt-5">
+                We use an application designed a testing gnoses to keep away
+              </p>
+            </div>
+            <!-- end of card 03 -->
+          </div>
+        </div>
+      </section>
+      <!-- End How It Work Section -->
+
+      <!-- Start testimonial Section -->
+      <section
+        class="testimonial_area py-10 flex items-center justify-center"
+        id="testimonial">
+        <div class="container">
+          <div class="titling text-center md:w-1/2 m-auto md:pb-12 lg:pb-20">
+            <h2 class="capitalize text-secondary mb-4">user review</h2>
+            <h2 class="title mb-6">
+              what client say about our app after use it
+            </h2>
+          </div>
+          <!-- end of titling text -->
+
+          <!-- review testimonial -->
+          <!-- testimonial img -->
+          <div
+            class="user_thumbnails flex items-center justify-center flex-wrap mb-20 space-x-5">
+            <img
+              src="./img/user1.jpg"
+              class="user_thumbnail user_thumb_active w-20 h-20 rounded-full object-cover"
+              onclick="showActive()" />
+            <img
+              src="./img/user2.jpg"
+              class="user_thumbnail w-20 h-20 rounded-full object-cover"
+              onclick="showActive()" />
+            <img
+              src="./img/user3.jpg"
+              class="user_thumbnail w-20 h-20 rounded-full object-cover"
+              onclick="showActive()" />
+            <img
+              src="./img/user4.jpg"
+              class="user_thumbnail w-20 h-20 rounded-full object-cover"
+              onclick="showActive()" />
+            <img
+              src="./img/user5.jpg"
+              class="user_thumbnail w-20 h-20 rounded-full object-cover"
+              onclick="showActive()" />
+          </div>
+          <!-- end of testimonial img -->
+
+          <!-- testimonial text -->
+          <div class="user_texts text-center md:w-4/5 m-auto px-10">
+            <div class="user_text user_text_active">
+              <p class="text-2xl leading-relaxed">
+                "This should be used to tell a story and include any
+                testimonials you night have about your product or service or
+                service for your clients"
+              </p>
+              <h3 class="capitalize text-secondary pt-6 pb-2">markin nesus</h3>
+              <p>ISO developer</p>
+            </div>
+            <!-- end of review 1 -->
+
+            <div class="user_text">
+              <p class="text-2xl leading-relaxed">
+                "This should be used to tell a story and include any
+                testimonials you night have about your product or service or
+                service for your clients"
+              </p>
+              <h3 class="capitalize text-secondary pt-6 pb-2">vera duncan</h3>
+              <p>Flutter developer</p>
+            </div>
+            <!-- end of review 2 -->
+
+            <div class="user_text">
+              <p class="text-2xl leading-relaxed">
+                "This should be used to tell a story and include any
+                testimonials you night have about your product or service or
+                service for your clients"
+              </p>
+              <h3 class="capitalize text-secondary pt-6 pb-2">pirtle karol</h3>
+              <p>Android developer</p>
+            </div>
+            <!-- end of review 3 -->
+
+            <div class="user_text">
+              <p class="text-2xl leading-relaxed">
+                "This should be used to tell a story and include any
+                testimonials you night have about your product or service or
+                service for your clients"
+              </p>
+              <h3 class="capitalize text-secondary pt-6 pb-2">mark joo</h3>
+              <p>React developer</p>
+            </div>
+            <!-- end of review 4 -->
+
+            <div class="user_text">
+              <p class="text-2xl leading-relaxed">
+                "This should be used to tell a story and include any
+                testimonials you night have about your product or service or
+                service for your clients"
+              </p>
+              <h3 class="capitalize text-secondary pt-6 pb-2">leila domnuic</h3>
+              <p>Angular developer</p>
+            </div>
+            <!-- end of review 5 -->
+          </div>
+          <!-- end of testimonial text -->
+          <!-- end of review testimonial -->
+        </div>
+      </section>
+      <!-- End testimonial Section -->
+
+      <!-- Start pricing Section -->
+      <section
+        class="pricing_area py-10 flex items-center justify-center"
+        id="pricing">
+        <div class="container">
+          <div class="titling text-center md:w-1/2 m-auto md:pb-12 lg:pb-10">
+            <h2 class="capitalize text-secondary mb-4">pricing</h2>
+            <h2 class="title mb-4">get in reasonable price</h2>
+          </div>
+          <!-- end of titling text -->
+
+          <!-- rounded switch -->
+          <div
+            class="rounded_switch flex items-center justify-center gap-4 mb-4">
+            <p class="capitalize">bill monthly</p>
+
+            <label class="relative cursor-pointer w-20 h-6 rounded-full">
+              <input type="checkbox" class="toggleBtn opacity-0 w-0 h-0 peer" />
+              <span
+                class="absolute inset-0 bg-gray border border-gray rounded-full duration-300 before:content-[''] before:absolute before:w-6 before:h-6 before:bg-white before:bottom-0 before:left-0 before:rounded-full before:duration-300 peer-checked:bg-secondary peer-checked:before:translate-x-16"></span>
+            </label>
+
+            <p class="capitalize">bill annually</p>
+          </div>
+          <!-- end of rounded switch -->
+
+          <!-- pricing card wrapper -->
+          <div
+            class="card_wrapper grid md:grid-cols-2 lg:grid-cols-3 gap-5 py-5">
+            <!-- card 1 -->
+            <div class="price_card relative w-auto h-auto">
+              <!-- card front -->
+              <div
+                class="cardFront1 front border-2 border-gray rounded-2xl p-5 duration-300 overflow-hidden w-full h-full">
+                <div class="relative mt-6 my-10">
+                  <span class="absolute -top-1 -left-2">$</span>
+                  <span class="price text-5xl font-bold">100</span>
+                  <span>/per month</span>
+                </div>
+
+                <div class="packages_name mb-6">
+                  <h2 class="capitalize font-bold text-2xl pb-4">basic</h2>
+                  <p class="capitalize">
+                    for beginner who want to scale business globally
+                  </p>
+                </div>
+
+                <ul class="package_list space-y-5">
+                  <li class="space-x-3 my-5">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">expense management</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">card management</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-gray"></i>
+                    <span class="capitalize">instant statistics</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-gray"></i>
+                    <span class="capitalize">bookmark function</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-gray"></i>
+                    <span class="capitalize">accounting system</span>
+                  </li>
+                </ul>
+                <button class="card_btn">Get Started</button>
+              </div>
+              <!-- end card front -->
+
+              <!-- card back -->
+              <div
+                class="cardBack1 back rotate-y-180 border-2 border-secondary rounded-2xl p-5 duration-300 overflow-hidden absolute top-0 left-0 w-full h-full">
+                <div class="relative mt-6 my-10">
+                  <span class="absolute -top-1 -left-2">$</span>
+                  <span class="price text-5xl font-bold">500</span>
+                  <span>/per month</span>
+                </div>
+
+                <div class="packages_name mb-6">
+                  <h2 class="capitalize font-bold text-2xl pb-4">premium</h2>
+                  <p class="capitalize">
+                    for beginner who want to scale business globally
+                  </p>
+                </div>
+
+                <ul class="package_list space-y-5">
+                  <li class="space-x-3 my-5">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">expense management</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">card management</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">instant statistics</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">bookmark function</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">accounting system</span>
+                  </li>
+                </ul>
+                <button class="card_btn">Get Started</button>
+              </div>
+              <!-- end card back -->
+            </div>
+            <!-- end card 1 -->
+
+            <!-- card 2 -->
+            <div class="price_card relative w-auto h-auto">
+              <!-- card front -->
+              <div
+                class="cardFront2 front border-2 border-gray rounded-2xl p-5 duration-300 overflow-hidden w-full h-full">
+                <div class="relative mt-6 my-10">
+                  <span class="absolute -top-1 -left-2">$</span>
+                  <span class="price text-5xl font-bold">300</span>
+                  <span>/per month</span>
+                </div>
+
+                <div class="packages_name mb-6">
+                  <h2 class="capitalize font-bold text-2xl pb-4">standard</h2>
+                  <p class="capitalize">
+                    for beginner who want to scale business globally
+                  </p>
+                </div>
+
+                <ul class="package_list space-y-5">
+                  <li class="space-x-3 my-5">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">expense management</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">card management</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">instant statistics</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">bookmark function</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-gray"></i>
+                    <span class="capitalize">accounting system</span>
+                  </li>
+                </ul>
+                <button class="card_btn">Get Started</button>
+              </div>
+              <!-- end card front -->
+
+              <!-- card back -->
+              <div
+                class="cardBack2 back rotate-y-180 border-2 border-secondary rounded-2xl p-5 duration-300 overflow-hidden absolute top-0 left-0 w-full h-full">
+                <div class="relative mt-6 my-10">
+                  <span class="absolute -top-1 -left-2">$</span>
+                  <span class="price text-5xl font-bold">500</span>
+                  <span>/per month</span>
+                </div>
+
+                <div class="packages_name mb-6">
+                  <h2 class="capitalize font-bold text-2xl pb-4">premium</h2>
+                  <p class="capitalize">
+                    for beginner who want to scale business globally
+                  </p>
+                </div>
+
+                <ul class="package_list space-y-5">
+                  <li class="space-x-3 my-5">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">expense management</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">card management</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">instant statistics</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">bookmark function</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">accounting system</span>
+                  </li>
+                </ul>
+                <button class="card_btn">Get Started</button>
+              </div>
+              <!-- end card back -->
+            </div>
+            <!-- end card 2 -->
+
+            <!-- card 3 -->
+            <div class="price_card relative w-auto h-auto">
+              <!-- card front -->
+              <div
+                class="cardFront3 front border-2 border-gray rounded-2xl p-5 duration-300 overflow-hidden w-full h-full">
+                <div class="relative mt-6 my-10">
+                  <span class="absolute -top-1 -left-2">$</span>
+                  <span class="price text-5xl font-bold">500</span>
+                  <span>/per month</span>
+                </div>
+
+                <div class="packages_name mb-6">
+                  <h2 class="capitalize font-bold text-2xl pb-4">premium</h2>
+                  <p class="capitalize">
+                    for beginner who want to scale business globally
+                  </p>
+                </div>
+
+                <ul class="package_list space-y-5">
+                  <li class="space-x-3 my-5">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">expense management</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">card management</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">instant statistics</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">bookmark function</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">accounting system</span>
+                  </li>
+                </ul>
+                <button class="card_btn">Get Started</button>
+              </div>
+              <!-- end card front -->
+
+              <!-- card back -->
+              <div
+                class="cardBack3 back rotate-y-180 border-2 border-secondary rounded-2xl p-5 duration-300 overflow-hidden absolute top-0 left-0 w-full h-full">
+                <div class="relative mt-6 my-10">
+                  <span class="absolute -top-1 -left-2">$</span>
+                  <span class="price text-5xl font-bold">500</span>
+                  <span>/per month</span>
+                </div>
+
+                <div class="packages_name mb-6">
+                  <h2 class="capitalize font-bold text-2xl pb-4">premium</h2>
+                  <p class="capitalize">
+                    for beginner who want to scale business globally
+                  </p>
+                </div>
+
+                <ul class="package_list space-y-5">
+                  <li class="space-x-3 my-5">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">expense management</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">card management</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">instant statistics</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">bookmark function</span>
+                  </li>
+                  <li class="mb-5 space-x-3">
+                    <i class="fa-solid fa-bookmark text-secondary"></i>
+                    <span class="capitalize">accounting system</span>
+                  </li>
+                </ul>
+                <button class="card_btn">Get Started</button>
+              </div>
+              <!-- end card back -->
+            </div>
+            <!-- end card 3 -->
+          </div>
+          <!-- end of pricing card wrapper -->
+        </div>
+      </section>
+      <!-- End pricing Section -->
+
+      <!-- Start blog Section -->
+      <section class="blog_area py-10" id="blog">
+        <div class="container">
+          <div class="titling text-center md:w-1/2 m-auto md:pb-12 lg:pb-10">
+            <h2 class="capitalize text-secondary mb-4">
+              innovation and quality improvement
+            </h2>
+            <h2 class="title mb-4">
+              latest updates, solutions and company news
+            </h2>
+          </div>
+          <!-- end of titling text -->
+
+          <!-- blog card wrapper -->
+          <div
+            class="blog_card_wrapper grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- blog card 1 -->
+            <div
+              class="blog_card p-3 pb-6 rounded-sm shadow-sm shadow-secondary">
+              <div
+                class="blog_thumbnail rounded-xl mb-4 scale-100 overflow-hidden inline-block">
+                <img
+                  src="./img/blog1.jpg"
+                  class="lg:h-full w-full hover:scale-125 transition-all duration-300 ease-in" />
+              </div>
+
+              <div class="flex items-center space-x-4 mb-4">
+                <p>22 October 2023</p>
+                <p>1 min read</p>
+              </div>
+
+              <div class="blog_link">
+                <a
+                  href="#blog"
+                  class="capitalize text-2xl font-bold underline decoration-solid hover:text-secondary hover:no-underline">
+                  four ways to cheer yourself up on blue monday
+                </a>
+                <p class="mt-4 mb-3">
+                  On the second edition of Serious Business, Inc. editor Jim
+                  Ledbetter and Fusion senior editor Salmon debate...
+                </p>
+                <a href="#blog" class="capitalize font-bold leading-relaxed"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <!-- end of blog card 1 -->
+
+            <!-- blog card 2 -->
+            <div
+              class="blog_card p-3 pb-6 rounded-sm shadow-sm shadow-secondary">
+              <div
+                class="blog_thumbnail rounded-xl mb-4 scale-100 overflow-hidden inline-block">
+                <img
+                  src="./img/blog2.jpg"
+                  class="lg:h-full w-full hover:scale-125 transition-all duration-300 ease-in" />
+              </div>
+
+              <div class="flex items-center space-x-4 mb-4">
+                <p>22 October 2023</p>
+                <p>1 min read</p>
+              </div>
+
+              <div class="blog_link">
+                <a
+                  href="#blog"
+                  class="capitalize text-2xl font-bold underline decoration-solid hover:text-secondary hover:no-underline">
+                  How to Organize Your budget for Maximum Productivity?
+                </a>
+                <p class="mt-4 mb-3">
+                  Global provider connected products for consumers, and
+                  enterprises worldwide, supply chain control is everything...
+                </p>
+                <a href="#blog" class="capitalize font-bold leading-relaxed"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <!-- end of blog card 2 -->
+
+            <!-- blog card 3 -->
+            <div
+              class="blog_card p-3 pb-6 rounded-sm shadow-sm shadow-secondary">
+              <div
+                class="blog_thumbnail rounded-xl mb-4 scale-100 overflow-hidden inline-block">
+                <img
+                  src="./img/blog3.jpg"
+                  class="lg:h-full w-full hover:scale-125 transition-all duration-300 ease-in" />
+              </div>
+
+              <div class="flex items-center space-x-4 mb-4">
+                <p>22 October 2023</p>
+                <p>1 min read</p>
+              </div>
+
+              <div class="blog_link">
+                <a
+                  href="#blog"
+                  class="capitalize text-2xl font-bold underline decoration-solid hover:text-secondary hover:no-underline">
+                  Should Small Businesses Be Entitled to system?
+                </a>
+                <p class="mt-4 mb-3">
+                  Our team provides skilled & experienced managers who know the
+                  intricacies of this vertical and focus...
+                </p>
+                <a href="#blog" class="capitalize font-bold leading-relaxed"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <!-- end of blog card 2 -->
+          </div>
+          <!-- end of  blog card wrapper -->
+        </div>
+      </section>
+      <!-- End blog Section -->
+
+      <!-- Start download-app Section -->
+      <section
+        class="download-app_area py-10 h-[80vh] grid place-items-center text-center bg-primary-light"
+        id="download-app">
+        <div class="container md:w-2/3 m-auto">
+          <h2 class="title">Download App Now And Save Your Money</h2>
+          <p class="leading-relaxed my-5">
+            Serving an impressive list of long-term money with experience and
+            expertise in multiple industries.
+          </p>
+
+          <div
+            class="flex flex-col md:flex-row gap-5 py-6 justify-center text-center">
+            <a
+              href="#download-app"
+              class="w-44 h-16 bg-white rounded-lg grid place-items-center">
+              <img src="./img/ios-store-dark.png" alt=""
+            /></a>
+            <a
+              href="#download-app"
+              class="w-44 h-16 bg-white rounded-lg grid place-items-center">
+              <img src="./img/g-play-dark.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+      <!-- End download-app Section -->
+
+      <!-- Start contact Section -->
+      <section
+        class="contact_area py-10 flex items-center justify-center"
+        id="contact">
+        <div class="container">
+          <div class="titling text-center md:w-1/2 m-auto md:pb-12 lg:pb-10">
+            <h2 class="capitalize text-secondary mb-4">have a question</h2>
+            <h2 class="title mb-4">get in touch</h2>
+          </div>
+          <!-- end of titling text -->
+
+          <form action="#">
+            <div class="form_wrapper w-full md:w-2/3 m-auto text-center">
+              <div class="form_group grid md:grid-cols-2 gap-6 mb-6">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="w-full p-3 rounded-xl text-gray focus:outline-none focus:bg-gray focus:text-secondary" />
+
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="w-full p-3 rounded-xl text-gray focus:outline-none focus:bg-gray focus:text-secondary" />
+
+                <input
+                  type="text"
+                  placeholder="Phone"
+                  class="w-full p-3 rounded-xl text-gray focus:outline-none focus:bg-gray focus:text-secondary" />
+
+                <input
+                  type="text"
+                  placeholder="Company"
+                  class="w-full p-3 rounded-xl text-gray focus:outline-none focus:bg-gray focus:text-secondary" />
+              </div>
+
+              <textarea
+                cols="30"
+                rows="4"
+                placeholder="Message"
+                class="w-full p-3 rounded-xl text-gray focus:outline-none focus:bg-gray focus:text-secondary"></textarea>
+
+              <button class="btn-primary my-5">send message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- End contact Section -->
+    </main>
+
+    <!-- Start footer Section -->
+    <footer class="footer_area bg-primary-light py-10" id="footer">
+      <div class="container">
+        <!-- footer top -->
+        <div class="footer_top grid md:grid-cols-3 gap-6">
+          <!-- footer about -->
+          <div class="footer_about">
+            <h2 class="font-bold text-2xl capitalize pb-5">about app</h2>
+            <p class="capi leading-relaxed">
+              This Should Be Used To Tell A Story And Include Any Testimonials
+              You Might Have About Your Product Or Service For Your Clients
+            </p>
+
+            <div class="flex items-center space-x-5 py-5">
+              <p>Follow Us</p>
+              <i
+                class="fa-brands fa-facebook-f cursor-pointer hover:text-secondary"></i>
+              <i
+                class="fa-brands fa-twitter cursor-pointer hover:text-secondary"></i>
+              <i
+                class="fa-brands fa-youtube cursor-pointer hover:text-secondary"></i>
+              <i
+                class="fa-brands fa-instagram cursor-pointer hover:text-secondary"></i>
+            </div>
+          </div>
+          <!-- end of  footer about -->
+
+          <!-- footer link -->
+          <div class="footer_link flex justify-between md:justify-around">
+            <div class="links">
+              <h2 class="font-bold text-2xl capitalize pb-5">quick links</h2>
+
+              <ul class="space-y-5">
+                <li>
+                  <a
+                    href="#home"
+                    class="capitalize underline hover:no-underline"
+                    >home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#feature"
+                    class="capitalize underline hover:no-underline"
+                    >feature</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#testimonial"
+                    class="capitalize underline hover:no-underline"
+                    >testimonial</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#pricing"
+                    class="capitalize underline hover:no-underline"
+                    >pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#blog"
+                    class="capitalize underline hover:no-underline"
+                    >blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="capitalize underline hover:no-underline"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- end of links -->
+
+            <div class="links">
+              <h2 class="font-bold text-2xl capitalize pb-5">help</h2>
+
+              <ul class="space-y-5">
+                <li>
+                  <a
+                    href="#about us"
+                    class="capitalize underline hover:no-underline"
+                    >about us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#partners"
+                    class="capitalize underline hover:no-underline"
+                    >partners</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#career"
+                    class="capitalize underline hover:no-underline"
+                    >career</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#reviews"
+                    class="capitalize underline hover:no-underline"
+                    >reviews</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#terms&conditions"
+                    class="capitalize underline hover:no-underline"
+                    >terms & conditions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#help"
+                    class="capitalize underline hover:no-underline"
+                    >help</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- end of help -->
+          </div>
+          <!-- end of  footer link -->
+
+          <!-- footer newsletter -->
+          <div class="footer_newsletter">
+            <h2 class="font-bold text-2xl capitalize pb-5">newsletter</h2>
+            <p class="capitalize leading-relaxed">
+              subscribe with email and loads of news will be sent to you
+            </p>
+
+            <div class="flex items-center w-full py-5">
+              <input
+                type="text"
+                placeholder="enter your email"
+                class="w-2/3 p-3 rounded-l-lg focus:outline-none focus:bg-gray focus:text-secondary" />
+              <button
+                type="submit"
+                class="bg-secondary py-3 px-6 hover:opacity-80">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <!-- end of  footer newsletter -->
+        </div>
+        <!-- end of footer top -->
+
+        <!-- footer bottom -->
+        <div
+          class="footer_bottom mt-5 py-5 border-t-2 border-t-gray text-center">
+          <p>2023 &copy; LightCode. All Right Reserved.</p>
+        </div>
+        <!-- end of footer bottom -->
+      </div>
+    </footer>
+    <!-- End footer Section -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<!-- https://www.youtube.com/watch?v=oP5yKkKxLvE -->

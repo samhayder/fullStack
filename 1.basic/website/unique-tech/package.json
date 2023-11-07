@@ -1,0 +1,16 @@
+{
+  "name": "unique-tech",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./input.css -o ./src/css/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./src/css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  },
+  "description": ""
+}

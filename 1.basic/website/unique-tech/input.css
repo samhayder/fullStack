@@ -1,0 +1,45 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply m-0 p-0 relative box-border tracking-wider font-exo text-secondary ;
+}
+
+section {
+  @apply w-full min-h-full lg:h-[100vh];
+}
+
+/* .header_area.header_sticky {
+  @apply border-b-2 border-secondary shadow-md;
+}
+ */
+.nav_link {
+  @apply uppercase font-bold px-2 py-1 border-2 border-transparent hover:border-[#fff200] hover:rounded-md transition-all ease-in duration-300;
+}
+
+.mobile_menu {
+  @apply opacity-0 invisible transition duration-300;
+}
+.mobile_menu.show_mobile_menu {
+  @apply opacity-100 visible;
+}
+
+.menu_icon.fa-close {
+  @apply text-red-500 hover:border-red-500;
+}
+
+.btn-primary {
+  @apply uppercase text-white bg-secondary border rounded-sm hover:bg-primary hover:border-secondary transition duration-300;
+}
+
+.dotActive {
+  @apply bg-white transition-all ease-in duration-300;
+}
+
+.activeImg {
+  @apply opacity-100
+}

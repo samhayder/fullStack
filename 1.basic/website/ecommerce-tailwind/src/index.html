@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Project</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/9e98f3d98f.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="py-4 shadow-sm">
+      <div class="container flex items-center justify-between space-x-3">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img src="./images/logo.svg" alt="Logo" class="w-32" />
+        </a>
+
+        <!-- Search Bar -->
+        <div class="search_bar w-full max-w-xl relative flex">
+          <span
+            class="absolute top-[50%] left-2.5 translate-y-[-50%] text-gray-400">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="search_input w-full border border-primary pl-8 p-2 rounded-l-md focus:outline-none focus:bg-gray-100 focus:font-bold"
+            placeholder="Search" />
+
+          <button
+            class="bg-primary text-white px-3 border border-primary rounded-r-md hover:bg-white hover:text-primary transition delay-100">
+            Search
+          </button>
+        </div>
+
+        <!-- icon Bar -->
+        <div class="icon_bar flex items-center space-x-3">
+          <a
+            href="#"
+            class="relative text-gray-700 text-center hover:text-purple-600 transition">
+            <div class="text-2xl">
+              <i class="fas fas fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wish List</div>
+            <span
+              class="wish_count absolute w-5 h-5 right-0 -top-1 text-xs bg-primary text-white rounded-full flex items-center justify-center"
+              >8</span
+            >
+          </a>
+
+          <a
+            href="#"
+            class="relative text-gray-700 text-center hover:text-purple-600 transition">
+            <div class="text-2xl">
+              <i class="fas fas fas fa-shopping-bag"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span
+              class="cart_count absolute w-5 h-5 -right-2 -top-1 text-xs bg-primary text-white rounded-full flex items-center justify-center"
+              >2</span
+            >
+          </a>
+
+          <a
+            href="#"
+            class="relative text-gray-700 text-center hover:text-purple-600 transition">
+            <div class="text-2xl">
+              <i class="fas fas fas fa-user"></i>
+            </div>
+            <div class="text-xs leading-3">User</div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Navbar -->
+    <nav class="bg-gray-800">
+      <div class="container flex">
+        <!-- All Category -->
+        <div
+          class="category bg-primary text-white px-5 py-3 cursor-pointer border border-primary hover:bg-white hover:text-primary transition relative group">
+          <span><i class="fas fa-bars"></i></span>
+          <span class="capitalize">All Categories</span>
+
+          <!-- Drop Down Menu Links -->
+          <div
+            class="drop_down_link w-full absolute left-0 top-full bg-gray-100 text-gray-400 shadow-sm capitalize divide-y-2 divide-primary divide-dotted opacity-0 invisible group-hover:opacity-100 group-hover:visible z-10 transition duration-1000">
+            <a href="#" class="flex px-5 py-3 hover:text-gray-600">
+              <img
+                src="./images/icons/bed.svg"
+                class="w-5 h-5 object-contain" />
+              <p class="px-2">Bedroom</p>
+            </a>
+            <a href="#" class="flex px-5 py-3 hover:text-gray-600">
+              <img
+                src="./images/icons/sofa.svg"
+                class="w-5 h-5 object-contain" />
+              <p class="px-2">sofa</p>
+            </a>
+            <a href="#" class="flex px-5 py-3 hover:text-gray-600">
+              <img
+                src="./images/icons/office.svg"
+                class="w-5 h-5 object-contain" />
+              <p class="px-2">office</p>
+            </a>
+            <a href="#" class="flex px-5 py-3 hover:text-gray-600">
+              <img
+                src="./images/icons/outdoor-cafe.svg"
+                class="w-5 h-5 object-contain" />
+              <p class="px-2">outdoor</p>
+            </a>
+            <a href="#" class="flex px-5 py-3 hover:text-gray-600">
+              <img
+                src="./images/icons/bed-2.svg"
+                class="w-5 h-5 object-contain" />
+              <p class="px-2">mattress</p>
+            </a>
+            <a href="#" class="flex px-5 py-3 hover:text-gray-600">
+              <img
+                src="./images/icons/terrace.svg"
+                class="w-5 h-5 object-contain" />
+              <p class="px-2">dining</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Nav Links -->
+        <div class="links flex flex-grow items-center justify-between pl-8">
+          <div class="link capitalize flex items-center space-x-4">
+            <a
+              href="index.html"
+              class="text-gray-200 hover:text-white transition"
+              >home</a
+            >
+            <a
+              href="shope.html"
+              class="text-gray-200 hover:text-white transition"
+              >shope</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-200 hover:text-white transition"
+              >about us</a
+            >
+            <a
+              href="contact.html"
+              class="text-gray-200 hover:text-white transition"
+              >contact us</a
+            >
+          </div>
+
+          <!-- Login Bar-->
+          <div class="login_bar capitalize">
+            <a href="#" class="text-gray-200 hover:text-white transition"
+              >login</a
+            ><span class="text-white"> /</span>
+            <a href="#" class="text-gray-200 hover:text-white transition"
+              >register</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Banner Section -->
+    <section
+      class="hero_area bg-cover bg-center bg-no-repeat py-36"
+      style="background-image: url(./images/banner-bg.jpg)">
+      <div class="container">
+        <h1
+          class="hero_text text-6xl text-gray-800 font-medium mb-4 capitalize">
+          best collection for <br />
+          home decoration
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Modi esse, totam architecto dolorem dignissimos ab.
+        </p>
+
+        <button
+          class="shopBtn bg-primary text-white border border-primary px-8 py-3 rounded-lg my-7 transition hover:bg-transparent hover:text-primary">
+          Shope Now
+        </button>
+      </div>
+    </section>
+    <!-- End Banner Section -->
+
+    <!-- Start Feature Section -->
+    <section class="feature_area py-8">
+      <div
+        class="container w-10/12 grid grid-cols-3 gap-6 mx-auto justify-center">
+        <!-- Single Feature -->
+        <div
+          class="single_feature w-full border border-primary py-3 px-6 flex items-center justify-center gap-5">
+          <img
+            src="./images/icons/delivery-van.svg"
+            class="w-6 h-6 object-contain" />
+
+          <div class="feature_content">
+            <h2 class="font-medium text-xl capitalize">free delivery</h2>
+            <p class="text-gray-300 text-xs">order over $200</p>
+          </div>
+        </div>
+
+        <!-- Single Feature -->
+        <div
+          class="single_feature w-full border border-primary py-3 px-6 flex items-center justify-center gap-5">
+          <img
+            src="./images/icons/money-back.svg"
+            class="w-6 h-6 object-contain" />
+
+          <div class="feature_content">
+            <h2 class="font-medium text-xl capitalize">money return</h2>
+            <p class="text-gray-500 text-xs">30 days money returns</p>
+          </div>
+        </div>
+        <!-- Single Feature -->
+        <div
+          class="single_feature w-full border border-primary py-3 px-6 flex items-center justify-center gap-5">
+          <img
+            src="./images/icons/service-hours.svg"
+            class="w-6 h-6 object-contain" />
+
+          <div class="feature_content">
+            <h2 class="font-medium text-xl capitalize">24/7 support</h2>
+            <p class="text-gray-500 text-xs">Customer support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Feature Section -->
+
+    <!-- Start Category Section -->
+    <section class="category_area py-8">
+      <div class="container">
+        <h2 class="uppercase font-medium text-3xl mb-5">shop by category</h2>
+
+        <div class="category_wrapper grid grid-cols-3 gap-3 overflow-hidden">
+          <!-- Single Category -->
+          <div href="#" class="single_category relative group">
+            <img
+              src="./images/category/category-1.jpg"
+              class="w-full object-cover" />
+
+            <a
+              href="#"
+              class="absolute inset-0 capitalize text-white font-bold grid place-items-center bg-black opacity-0 group-hover:opacity-50 transition-all">
+              bedroom
+            </a>
+          </div>
+
+          <!-- Single Category -->
+          <div href="#" class="single_category relative group">
+            <img
+              src="./images/category/category-5.jpg"
+              class="w-full object-cover" />
+
+            <a
+              href="#"
+              class="absolute inset-0 capitalize text-white font-bold grid place-items-center bg-black opacity-0 group-hover:opacity-50 transition-all">
+              sofa
+            </a>
+          </div>
+
+          <!-- Single Category -->
+          <div href="#" class="single_category relative group">
+            <img
+              src="./images/category/category-3.jpg"
+              class="w-full object-cover" />
+
+            <a
+              href="#"
+              class="absolute inset-0 capitalize text-white font-bold grid place-items-center bg-black opacity-0 group-hover:opacity-50 transition-all">
+              office
+            </a>
+          </div>
+
+          <!-- Single Category -->
+          <div href="#" class="single_category relative group transition">
+            <img
+              src="./images/category/category-4.jpg"
+              class="w-full object-cover" />
+
+            <a
+              href="#"
+              class="absolute inset-0 capitalize text-white font-bold grid place-items-center bg-black opacity-0 group-hover:opacity-50 transition-all">
+              outdoor
+            </a>
+          </div>
+
+          <!-- Single Category -->
+          <div href="#" class="single_category relative group">
+            <img
+              src="./images/category/category-2.jpg"
+              class="w-full object-cover" />
+
+            <a
+              href="#"
+              class="absolute inset-0 capitalize text-white font-bold grid place-items-center bg-black opacity-0 group-hover:opacity-50 transition-all">
+              mattress
+            </a>
+          </div>
+
+          <!-- Single Category -->
+          <div href="#" class="single_category relative group">
+            <img
+              src="./images/category/category-6.jpg"
+              class="w-full object-cover" />
+
+            <a
+              href="#"
+              class="absolute inset-0 capitalize text-white font-bold grid place-items-center bg-black opacity-0 group-hover:opacity-50 transition-all">
+              dinings
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Category Section -->
+
+    <!-- Start Product Section -->
+    <section class="product_area py-8">
+      <div class="container">
+        <h2 class="uppercase font-medium text-3xl mb-5">top new arrival</h2>
+
+        <!-- Product Wrapper -->
+        <div class="product_wrapper grid grid-cols-4 gap-3">
+          <!-- Single Product list -->
+          <div class="single_product bg-white shadow-sm border rounded group">
+            <div class="product_img_wrap relative">
+              <img
+                src="./images/products/product10.jpg"
+                class="w-full object-cover" />
+              <div
+                class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_content p-3 space-y-2">
+              <a
+                href="#"
+                class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                >guyer chair</a
+              >
+              <div class="price flex items-baseline space-x-2">
+                <span class="new_price text-primary">$45.00</span>
+                <span class="old_price text-gray-500 line-through">$45.00</span>
+              </div>
+
+              <div class="rating flex space-x-2">
+                <div class="ration_mark flex text-yellow-500 space-x-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review_count text-gray-400">(255)</p>
+              </div>
+            </div>
+            <!-- end of product content -->
+            <button
+              class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+              Add to Cart
+            </button>
+          </div>
+          <!-- end of single product list -->
+
+          <!-- Single Product list -->
+          <div class="single_product bg-white shadow-sm border rounded group">
+            <div class="product_img_wrap relative">
+              <img
+                src="./images/products/product8.jpg"
+                class="w-full object-cover" />
+              <div
+                class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_content p-3 space-y-2">
+              <a
+                href="#"
+                class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                >guyer chair</a
+              >
+              <div class="price flex items-baseline space-x-2">
+                <span class="new_price text-primary">$45.00</span>
+                <span class="old_price text-gray-500 line-through">$45.00</span>
+              </div>
+
+              <div class="rating flex space-x-2">
+                <div class="ration_mark flex text-yellow-500 space-x-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review_count text-gray-400">(255)</p>
+              </div>
+            </div>
+            <!-- end of product content -->
+            <button
+              class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+              Add to Cart
+            </button>
+          </div>
+          <!-- end of single product list -->
+
+          <!-- Single Product list -->
+          <div class="single_product bg-white shadow-sm border rounded group">
+            <div class="product_img_wrap relative">
+              <img
+                src="./images/products/product9.jpg"
+                class="w-full object-cover" />
+              <div
+                class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_content p-3 space-y-2">
+              <a
+                href="#"
+                class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                >guyer chair</a
+              >
+              <div class="price flex items-baseline space-x-2">
+                <span class="new_price text-primary">$45.00</span>
+                <span class="old_price text-gray-500 line-through">$45.00</span>
+              </div>
+
+              <div class="rating flex space-x-2">
+                <div class="ration_mark flex text-yellow-500 space-x-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review_count text-gray-400">(255)</p>
+              </div>
+            </div>
+            <!-- end of product content -->
+            <button
+              class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+              Add to Cart
+            </button>
+          </div>
+          <!-- end of single product list -->
+
+          <!-- Single Product list -->
+          <div class="single_product bg-white shadow-sm border rounded group">
+            <div class="product_img_wrap relative">
+              <img
+                src="./images/products/product7.jpg"
+                class="w-full object-cover" />
+              <div
+                class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_content p-3 space-y-2">
+              <a
+                href="#"
+                class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                >guyer chair</a
+              >
+              <div class="price flex items-baseline space-x-2">
+                <span class="new_price text-primary">$45.00</span>
+                <span class="old_price text-gray-500 line-through">$45.00</span>
+              </div>
+
+              <div class="rating flex space-x-2">
+                <div class="ration_mark flex text-yellow-500 space-x-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review_count text-gray-400">(255)</p>
+              </div>
+            </div>
+            <!-- end of product content -->
+            <button
+              class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+              Add to Cart
+            </button>
+          </div>
+          <!-- end of single product list -->
+        </div>
+      </div>
+    </section>
+    <!-- End Product Section -->
+
+    <!-- Start Adds Section -->
+    <section class="adds_area py-8">
+      <div class="container">
+        <img src="./images/offer.jpg" alt="" />
+      </div>
+    </section>
+    <!-- End Adds Section -->
+
+    <!-- Start Recommended Product Section -->
+    <section class="recommended_product_area py-8">
+      <div class="container">
+        <h2 class="uppercase font-medium text-3xl mb-5">recommended for you</h2>
+
+        <!-- Product Wrapper -->
+        <div class="product_wrapper grid grid-cols-4 gap-3">
+          <!-- Single Product list -->
+          <div class="single_product bg-white shadow-sm border rounded group">
+            <div class="product_img_wrap relative">
+              <img
+                src="./images/products/product1.jpg"
+                class="w-full object-cover" />
+              <div
+                class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_content p-3 space-y-2">
+              <a
+                href="#"
+                class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                >guyer chair</a
+              >
+              <div class="price flex items-baseline space-x-2">
+                <span class="new_price text-primary">$45.00</span>
+                <span class="old_price text-gray-500 line-through">$45.00</span>
+              </div>
+
+              <div class="rating flex space-x-2">
+                <div class="ration_mark flex text-yellow-500 space-x-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review_count text-gray-400">(255)</p>
+              </div>
+            </div>
+            <!-- end of product content -->
+            <button
+              class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+              Add to Cart
+            </button>
+          </div>
+          <!-- end of single product list -->
+
+          <!-- Single Product list -->
+          <div class="single_product bg-white shadow-sm border rounded group">
+            <div class="product_img_wrap relative">
+              <img
+                src="./images/products/product2.jpg"
+                class="w-full object-cover" />
+              <div
+                class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_content p-3 space-y-2">
+              <a
+                href="#"
+                class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                >guyer chair</a
+              >
+              <div class="price flex items-baseline space-x-2">
+                <span class="new_price text-primary">$45.00</span>
+                <span class="old_price text-gray-500 line-through">$45.00</span>
+              </div>
+
+              <div class="rating flex space-x-2">
+                <div class="ration_mark flex text-yellow-500 space-x-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review_count text-gray-400">(255)</p>
+              </div>
+            </div>
+            <!-- end of product content -->
+            <button
+              class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+              Add to Cart
+            </button>
+          </div>
+          <!-- end of single product list -->
+
+          <!-- Single Product list -->
+          <div class="single_product bg-white shadow-sm border rounded group">
+            <div class="product_img_wrap relative">
+              <img
+                src="./images/products/product3.jpg"
+                class="w-full object-cover" />
+              <div
+                class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_content p-3 space-y-2">
+              <a
+                href="#"
+                class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                >guyer chair</a
+              >
+              <div class="price flex items-baseline space-x-2">
+                <span class="new_price text-primary">$45.00</span>
+                <span class="old_price text-gray-500 line-through">$45.00</span>
+              </div>
+
+              <div class="rating flex space-x-2">
+                <div class="ration_mark flex text-yellow-500 space-x-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review_count text-gray-400">(255)</p>
+              </div>
+            </div>
+            <!-- end of product content -->
+            <button
+              class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+              Add to Cart
+            </button>
+          </div>
+          <!-- end of single product list -->
+
+          <!-- Single Product list -->
+          <div class="single_product bg-white shadow-sm border rounded group">
+            <div class="product_img_wrap relative">
+              <img
+                src="./images/products/product6.jpg"
+                class="w-full object-cover" />
+              <div
+                class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_content p-3 space-y-2">
+              <a
+                href="#"
+                class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                >guyer chair</a
+              >
+              <div class="price flex items-baseline space-x-2">
+                <span class="new_price text-primary">$45.00</span>
+                <span class="old_price text-gray-500 line-through">$45.00</span>
+              </div>
+
+              <div class="rating flex space-x-2">
+                <div class="ration_mark flex text-yellow-500 space-x-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review_count text-gray-400">(255)</p>
+              </div>
+            </div>
+            <!-- end of product content -->
+            <button
+              class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+              Add to Cart
+            </button>
+          </div>
+          <!-- end of single product list -->
+
+          <!-- Single Product list -->
+          <div class="single_product bg-white shadow-sm border rounded group">
+            <div class="product_img_wrap relative">
+              <img
+                src="./images/products/product7.jpg"
+                class="w-full object-cover" />
+              <div
+                class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_content p-3 space-y-2">
+              <a
+                href="#"
+                class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                >guyer chair</a
+              >
+              <div class="price flex items-baseline space-x-2">
+                <span class="new_price text-primary">$45.00</span>
+                <span class="old_price text-gray-500 line-through">$45.00</span>
+              </div>
+
+              <div class="rating flex space-x-2">
+                <div class="ration_mark flex text-yellow-500 space-x-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review_count text-gray-400">(255)</p>
+              </div>
+            </div>
+            <!-- end of product content -->
+            <button
+              class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+              Add to Cart
+            </button>
+          </div>
+          <!-- end of single product list -->
+
+          <!-- Single Product list -->
+          <div class="single_product bg-white shadow-sm border rounded group">
+            <div class="product_img_wrap relative">
+              <img
+                src="./images/products/product8.jpg"
+                class="w-full object-cover" />
+              <div
+                class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_content p-3 space-y-2">
+              <a
+                href="#"
+                class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                >guyer chair</a
+              >
+              <div class="price flex items-baseline space-x-2">
+                <span class="new_price text-primary">$45.00</span>
+                <span class="old_price text-gray-500 line-through">$45.00</span>
+              </div>
+
+              <div class="rating flex space-x-2">
+                <div class="ration_mark flex text-yellow-500 space-x-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review_count text-gray-400">(255)</p>
+              </div>
+            </div>
+            <!-- end of product content -->
+            <button
+              class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+              Add to Cart
+            </button>
+          </div>
+          <!-- end of single product list -->
+
+          <!-- Single Product list -->
+          <div class="single_product bg-white shadow-sm border rounded group">
+            <div class="product_img_wrap relative">
+              <img
+                src="./images/products/product9.jpg"
+                class="w-full object-cover" />
+              <div
+                class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_content p-3 space-y-2">
+              <a
+                href="#"
+                class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                >guyer chair</a
+              >
+              <div class="price flex items-baseline space-x-2">
+                <span class="new_price text-primary">$45.00</span>
+                <span class="old_price text-gray-500 line-through">$45.00</span>
+              </div>
+
+              <div class="rating flex space-x-2">
+                <div class="ration_mark flex text-yellow-500 space-x-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review_count text-gray-400">(255)</p>
+              </div>
+            </div>
+            <!-- end of product content -->
+            <button
+              class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+              Add to Cart
+            </button>
+          </div>
+          <!-- end of single product list -->
+
+          <!-- Single Product list -->
+          <div class="single_product bg-white shadow-sm border rounded group">
+            <div class="product_img_wrap relative">
+              <img
+                src="./images/products/product4.jpg"
+                class="w-full object-cover" />
+              <div
+                class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                  <i class="fas fa-heart"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_content p-3 space-y-2">
+              <a
+                href="#"
+                class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                >guyer chair</a
+              >
+              <div class="price flex items-baseline space-x-2">
+                <span class="new_price text-primary">$45.00</span>
+                <span class="old_price text-gray-500 line-through">$45.00</span>
+              </div>
+
+              <div class="rating flex space-x-2">
+                <div class="ration_mark flex text-yellow-500 space-x-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="review_count text-gray-400">(255)</p>
+              </div>
+            </div>
+            <!-- end of product content -->
+            <button
+              class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+              Add to Cart
+            </button>
+          </div>
+          <!-- end of single product list -->
+        </div>
+      </div>
+    </section>
+    <!-- End Recommended Product Section -->
+
+    <!-- Start Footer Section -->
+    <footer class="footer_area py-8">
+      <div class="container flex gap-3 bg-white shadow py-6">
+        <!-- Footer Left -->
+        <div class="footer_info w-2/5 space-y-6">
+          <a href="#" class="">
+            <img src="./images/logo.svg" class="w-30" />
+          </a>
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ea
+            dignissimos earum asperiores natus nobis?
+          </p>
+
+          <div class="social_info text-gray-400 flex gap-5">
+            <a href="#" class="hover:text-primary transition"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="hover:text-primary transition"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="hover:text-primary transition"
+              ><i class="fab fab fa-instagram-square"></i
+            ></a>
+            <a href="#" class="hover:text-primary transition"
+              ><i class="fab fab fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <!-- end of Footer Left -->
+
+        <!-- Footer Links -->
+        <div class="footer_links w-3/5">
+          <div class="links_wrapper grid grid-cols-4 gap-3">
+            <!-- single links -->
+            <div class="single_links text-gray-500 grid space-y-4">
+              <h3 class="text-gray-700 uppercase">solution</h3>
+
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >marketing</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >analytics</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >commerce</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >insights</a
+              >
+            </div>
+            <!-- end of single links -->
+
+            <!-- single links -->
+            <div class="single_links text-gray-500 grid space-y-4">
+              <h3 class="text-gray-700 uppercase">support</h3>
+
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >pricing</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >documentation</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >guides</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >API status</a
+              >
+            </div>
+            <!-- end of single links -->
+
+            <!-- single links -->
+            <div class="single_links text-gray-500 grid space-y-4">
+              <h3 class="text-gray-700 uppercase">company</h3>
+
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >about</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >blog</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >jobs</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >press</a
+              >
+            </div>
+            <!-- end of single links -->
+
+            <!-- single links -->
+            <div class="single_links text-gray-500 grid space-y-4 divide-2">
+              <h3 class="text-gray-700 uppercase">legal</h3>
+
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >claim</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >privacy</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >policy</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >terms</a
+              >
+            </div>
+            <!-- end of single links -->
+          </div>
+        </div>
+        <!-- end of Footer Links -->
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- Start Footer Bottom Section -->
+    <section class="footer_bottom_area py-8 bg-gray-800">
+      <div class="container flex items-center justify-between">
+        <p class="text-white">&amp; RAFCAT all right reserve</p>
+        <img src="./images/methods.png" class="max-w-[150px]" />
+      </div>
+    </section>
+    <!-- End Footer Bottom Section -->
+  </body>
+</html>

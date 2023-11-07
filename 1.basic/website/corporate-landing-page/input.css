@@ -1,0 +1,43 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-exo text-primary m-0 p-0;
+  }
+  section {
+    @apply w-full h-[100vh];
+  }
+}
+
+/* Button Custom CSS */
+.btn-primary {
+  @apply  bg-secondary text-white uppercase rounded-sm border-2 border-secondary hover:border-secondary hover:text-secondary hover:shadow-md hover:bg-transparent hover:rounded-xl transition-all ease-in duration-300;
+}
+
+.bg_img {
+  @apply bg-cover bg-center bg-no-repeat bg-gray;
+}
+
+.design::before {
+  @apply content-[''] w-1/2 h-full bg-[#ececec] absolute top-0 right-0;
+}
+.design::after {
+  @apply content-[''] w-1/2 h-5/6 bg-secondary  absolute bottom-0 right-0 clip-path-designPolygon;
+  /* clip-path: polygon(100% 30%, 0% 100%, 100% 100%); */
+}
+
+.new_design_area::before {
+  @apply content-[''] w-1/2 h-full absolute top-0 left-0 bg-secondary clip-path-newDesignPolygon;
+}
+
+.browser_area::after {
+  @apply content-[''] w-1/2 h-full absolute bottom-0 right-0 bg-secondary clip-path-browserPolygon;
+}
+.footer_area::after {
+  @apply content-[''] w-1/2 h-full absolute bottom-0 right-0 bg-secondary clip-path-footerPolygon;
+}

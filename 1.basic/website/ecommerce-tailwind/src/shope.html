@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shope || E-commerce Project</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/9e98f3d98f.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="py-4 shadow-sm">
+      <div class="container flex items-center justify-between space-x-3">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img src="./images/logo.svg" alt="Logo" class="w-32" />
+        </a>
+
+        <!-- Search Bar -->
+        <div class="search_bar w-full max-w-xl relative flex">
+          <span
+            class="absolute top-[50%] left-2.5 translate-y-[-50%] text-gray-400">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="search_input w-full border border-primary pl-8 p-2 rounded-l-md focus:outline-none focus:bg-gray-100 focus:font-bold"
+            placeholder="Search" />
+
+          <button
+            class="bg-primary text-white px-3 border border-primary rounded-r-md hover:bg-white hover:text-primary transition delay-100">
+            Search
+          </button>
+        </div>
+
+        <!-- icon Bar -->
+        <div class="icon_bar flex items-center space-x-3">
+          <a
+            href="#"
+            class="relative text-gray-700 text-center hover:text-purple-600 transition">
+            <div class="text-2xl">
+              <i class="fas fas fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wish List</div>
+            <span
+              class="wish_count absolute w-5 h-5 right-0 -top-1 text-xs bg-primary text-white rounded-full flex items-center justify-center"
+              >8</span
+            >
+          </a>
+
+          <a
+            href="#"
+            class="relative text-gray-700 text-center hover:text-purple-600 transition">
+            <div class="text-2xl">
+              <i class="fas fas fas fa-shopping-bag"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span
+              class="cart_count absolute w-5 h-5 -right-2 -top-1 text-xs bg-primary text-white rounded-full flex items-center justify-center"
+              >2</span
+            >
+          </a>
+
+          <a
+            href="#"
+            class="relative text-gray-700 text-center hover:text-purple-600 transition">
+            <div class="text-2xl">
+              <i class="fas fas fas fa-user"></i>
+            </div>
+            <div class="text-xs leading-3">User</div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Navbar -->
+    <nav class="bg-gray-800">
+      <div class="container flex">
+        <!-- All Category -->
+        <div
+          class="category bg-primary text-white px-5 py-3 cursor-pointer border border-primary hover:bg-white hover:text-primary transition relative group">
+          <span><i class="fas fa-bars"></i></span>
+          <span class="capitalize">All Categories</span>
+
+          <!-- Drop Down Menu Links -->
+          <div
+            class="drop_down_link w-full absolute left-0 top-full bg-gray-100 text-gray-400 shadow-sm capitalize divide-y-2 divide-primary divide-dotted opacity-0 invisible group-hover:opacity-100 group-hover:visible z-10 transition duration-1000">
+            <a href="#" class="flex px-5 py-3 hover:text-gray-600">
+              <img
+                src="./images/icons/bed.svg"
+                class="w-5 h-5 object-contain" />
+              <p class="px-2">Bedroom</p>
+            </a>
+            <a href="#" class="flex px-5 py-3 hover:text-gray-600">
+              <img
+                src="./images/icons/sofa.svg"
+                class="w-5 h-5 object-contain" />
+              <p class="px-2">sofa</p>
+            </a>
+            <a href="#" class="flex px-5 py-3 hover:text-gray-600">
+              <img
+                src="./images/icons/office.svg"
+                class="w-5 h-5 object-contain" />
+              <p class="px-2">office</p>
+            </a>
+            <a href="#" class="flex px-5 py-3 hover:text-gray-600">
+              <img
+                src="./images/icons/outdoor-cafe.svg"
+                class="w-5 h-5 object-contain" />
+              <p class="px-2">outdoor</p>
+            </a>
+            <a href="#" class="flex px-5 py-3 hover:text-gray-600">
+              <img
+                src="./images/icons/bed-2.svg"
+                class="w-5 h-5 object-contain" />
+              <p class="px-2">mattress</p>
+            </a>
+            <a href="#" class="flex px-5 py-3 hover:text-gray-600">
+              <img
+                src="./images/icons/terrace.svg"
+                class="w-5 h-5 object-contain" />
+              <p class="px-2">dining</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Nav Links -->
+        <div class="links flex flex-grow items-center justify-between pl-8">
+          <div class="link capitalize flex items-center space-x-4">
+            <a
+              href="index.html"
+              class="text-gray-200 hover:text-white transition"
+              >home</a
+            >
+            <a
+              href="shope.html"
+              class="text-gray-200 hover:text-white transition"
+              >shope</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-200 hover:text-white transition"
+              >about us</a
+            >
+            <a
+              href="contact.html"
+              class="text-gray-200 hover:text-white transition"
+              >contact us</a
+            >
+          </div>
+
+          <!-- Login Bar-->
+          <div class="login_bar capitalize">
+            <a href="#" class="text-gray-200 hover:text-white transition"
+              >login</a
+            ><span class="text-white"> /</span>
+            <a href="#" class="text-gray-200 hover:text-white transition"
+              >register</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Breadcrumbs -->
+    <section class="breadcrumb_area py-4">
+      <div class="container flex items-center gap-3">
+        <a href="index.html" class="breadcrumb_icon text-primary text-base">
+          <i class="fas fa-home"></i>
+        </a>
+        <i class="fas fa-angle-right"></i>
+        <div class="breadcrumb_page">
+          <a href="shope.html">Shope</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Shope Product -->
+    <section class="shope_product_area py-8">
+      <div class="container grid grid-cols-4 gap-8">
+        <!-- Left Sidebar -->
+        <div
+          class="col-span-1 sidebar bg-white shadow-sm rounded-sm p-2 divide-y-2 divide-gray-400 divide-dashed overflow-hidden">
+          <!-- Single Sidebar Item -->
+          <div class="single_sidebar_item sidebar_category pt-3 pb-6">
+            <h2 class="uppercase font-bold pb-2">category</h2>
+            <!-- Single category list -->
+            <div
+              class="category_list flex items-center gap-3 capitalize text-gray-400">
+              <input
+                type="checkbox"
+                id="category_1"
+                class="text-primary cursor-pointer rounded-sm focus:ring-0" />
+              <label for="category_1">bedroom</label>
+              <div class="product_store ml-auto">(15)</div>
+            </div>
+            <!-- end of Single category list -->
+
+            <!-- Single category list -->
+            <div
+              class="category_list flex items-center gap-3 capitalize text-gray-400">
+              <input
+                type="checkbox"
+                id="category_2"
+                class="text-primary cursor-pointer rounded-sm focus:ring-0" />
+              <label for="category_2">sofa</label>
+              <div class="product_store ml-auto">(05)</div>
+            </div>
+            <!-- end of Single category list -->
+
+            <!-- Single category list -->
+            <div
+              class="category_list flex items-center gap-3 capitalize text-gray-400">
+              <input
+                type="checkbox"
+                id="category_3"
+                class="text-primary cursor-pointer rounded-sm focus:ring-0" />
+              <label for="category_3">office</label>
+              <div class="product_store ml-auto">(19)</div>
+            </div>
+            <!-- end of Single category list -->
+
+            <!-- Single category list -->
+            <div
+              class="category_list flex items-center gap-3 capitalize text-gray-400">
+              <input
+                type="checkbox"
+                id="category_4"
+                class="text-primary cursor-pointer rounded-sm focus:ring-0" />
+              <label for="category_4">outdoor</label>
+              <div class="product_store ml-auto">(23)</div>
+            </div>
+            <!-- end of Single category list -->
+          </div>
+          <!-- end of Single Sidebar Item -->
+
+          <!-- Single Sidebar Item -->
+          <div class="single_sidebar_item sidebar_category py-6">
+            <h2 class="uppercase font-bold pb-2">bands</h2>
+            <!-- Single category list -->
+            <div
+              class="category_list flex items-center gap-3 capitalize text-gray-400">
+              <input
+                type="checkbox"
+                id="category_1"
+                class="text-primary cursor-pointer rounded-sm focus:ring-0" />
+              <label for="category_1">dominik</label>
+              <div class="product_store ml-auto">(15)</div>
+            </div>
+            <!-- end of Single category list -->
+
+            <!-- Single category list -->
+            <div
+              class="category_list flex items-center gap-3 capitalize text-gray-400">
+              <input
+                type="checkbox"
+                id="category_2"
+                class="text-primary cursor-pointer rounded-sm focus:ring-0" />
+              <label for="category_2">kari</label>
+              <div class="product_store ml-auto">(09)</div>
+            </div>
+            <!-- end of Single category list -->
+
+            <!-- Single category list -->
+            <div
+              class="category_list flex items-center gap-3 capitalize text-gray-400">
+              <input
+                type="checkbox"
+                id="category_3"
+                class="text-primary cursor-pointer rounded-sm focus:ring-0" />
+              <label for="category_3">maxing</label>
+              <div class="product_store ml-auto">(13)</div>
+            </div>
+            <!-- end of Single category list -->
+
+            <!-- Single category list -->
+            <div
+              class="category_list flex items-center gap-3 capitalize text-gray-400">
+              <input
+                type="checkbox"
+                id="category_4"
+                class="text-primary cursor-pointer rounded-sm focus:ring-0" />
+              <label for="category_4">ernest</label>
+              <div class="product_store ml-auto">(17)</div>
+            </div>
+            <!-- end of Single category list -->
+          </div>
+          <!-- end of Single Sidebar Item -->
+
+          <!-- Single Sidebar Item -->
+          <div class="single_sidebar_item sidebar_category py-6">
+            <h2 class="uppercase font-bold pb-2">price</h2>
+
+            <div class="price_filter flex items-center gap-3 text-gray-400">
+              <input
+                type="text"
+                placeholder="min"
+                class="w-[50%] h-[25px] focus:border-transparent focus:ring-primary" />
+              <span>-</span>
+              <input
+                type="text"
+                placeholder="max"
+                class="w-[50%] h-[25px] focus:border-transparent focus:ring-primary" />
+            </div>
+          </div>
+          <!-- end of Single Sidebar Item -->
+
+          <!-- Single Sidebar Item -->
+          <div class="single_sidebar_item sidebar_category py-6">
+            <h2 class="uppercase font-bold pb-2">color</h2>
+
+            <div class="size flex items-center gap-2 text-gray-400 uppercase">
+              <div class="size_filter">
+                <input type="radio" name="size" id="size_xs" class="hidden" />
+                <label
+                  for="size_xs"
+                  class="w-6 h-6 border border-gray-300 rounded-sm shadow-sm cursor-pointer grid place-items-center"
+                  >xs</label
+                >
+              </div>
+              <div class="size_filter">
+                <input type="radio" name="size" id="size_s" class="hidden" />
+                <label
+                  for="size_s"
+                  class="w-6 h-6 border border-gray-300 rounded-sm shadow-sm cursor-pointer grid place-items-center"
+                  >s</label
+                >
+              </div>
+              <div class="size_filter">
+                <input type="radio" name="size" id="size_m" class="hidden" />
+                <label
+                  for="size_m"
+                  class="w-6 h-6 border border-gray-300 rounded-sm shadow-sm cursor-pointer grid place-items-center"
+                  >m</label
+                >
+              </div>
+              <div class="size_filter">
+                <input type="radio" name="size" id="size_l" class="hidden" />
+                <label
+                  for="size_l"
+                  class="w-6 h-6 border border-gray-300 rounded-sm shadow-sm cursor-pointer grid place-items-center"
+                  >l</label
+                >
+              </div>
+              <div class="size_filter">
+                <input type="radio" name="size" id="size_xl" class="hidden" />
+                <label
+                  for="size_xl"
+                  class="w-6 h-6 border border-gray-300 rounded-sm shadow-sm cursor-pointer grid place-items-center"
+                  >xl</label
+                >
+              </div>
+            </div>
+          </div>
+          <!-- end of Single Sidebar Item -->
+
+          <!-- Single Sidebar Item -->
+          <div class="single_sidebar_item sidebar_category py-6">
+            <h2 class="uppercase font-bold pb-2">color</h2>
+
+            <div class="color flex items-center gap-2 text-gray-400 uppercase">
+              <div class="color_filter">
+                <input
+                  type="radio"
+                  name="color"
+                  id="color_red"
+                  class="hidden" />
+                <label
+                  for="color_red"
+                  class="w-6 h-6 border border-gray-300 rounded-sm shadow-sm cursor-pointer grid place-items-center"
+                  style="background-color: red"></label>
+              </div>
+              <div class="color_filter">
+                <input
+                  type="radio"
+                  name="color"
+                  id="color_white"
+                  class="hidden" />
+                <label
+                  for="color_white"
+                  class="w-6 h-6 border border-gray-300 rounded-sm shadow-sm cursor-pointer grid place-items-center"
+                  style="background-color: white"></label>
+              </div>
+              <div class="color_filter">
+                <input
+                  type="radio"
+                  name="color"
+                  id="color_black"
+                  class="hidden" />
+                <label
+                  for="color_black"
+                  class="w-6 h-6 border border-gray-300 rounded-sm shadow-sm cursor-pointer grid place-items-center"
+                  style="background-color: black"></label>
+              </div>
+            </div>
+          </div>
+          <!-- end of Single Sidebar Item -->
+        </div>
+        <!-- end of Left Sidebar -->
+
+        <!-- Product Wrapper -->
+        <div class="col-span-3 shope_product_wrapper">
+          <!-- Sorting -->
+          <div class="sorting_item flex items-center pb-3">
+            <select
+              class="w-66 text-gray-400 rounded-sm focus:ring-primary focus:border-primary">
+              <option value="">Default sorting</option>
+              <option value="">Price High-Low</option>
+              <option value="">Price Low-High</option>
+              <option value="">Latest Product</option>
+            </select>
+
+            <div class="sort_icon flex items-center ml-auto">
+              <div
+                class="w-10 h-9 bg-primary text-white cursor-pointer text-center leading-9 mr-2 rounded-sm">
+                <i class="fas fa-th"></i>
+              </div>
+
+              <div
+                class="w-10 h-9 bg-gray-200 cursor-pointer text-center leading-9 rounded-sm">
+                <i class="fas fa-list"></i>
+              </div>
+            </div>
+          </div>
+          <!-- end of Sorting -->
+
+          <!-- Product Wrapper -->
+          <div class="product_wrapper grid grid-cols-3 gap-3">
+            <!-- Single Product list -->
+            <div class="single_product bg-white shadow-sm border rounded group">
+              <div class="product_img_wrap relative">
+                <img
+                  src="./images/products/product10.jpg"
+                  class="w-full object-cover" />
+                <div
+                  class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                  <a
+                    href="#"
+                    class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                    <i class="fas fa-search"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product_content p-3 space-y-2">
+                <a
+                  href="#"
+                  class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                  >guyer chair</a
+                >
+                <div class="price flex items-baseline space-x-2">
+                  <span class="new_price text-primary">$45.00</span>
+                  <span class="old_price text-gray-500 line-through"
+                    >$45.00</span
+                  >
+                </div>
+
+                <div class="rating flex space-x-2">
+                  <div class="ration_mark flex text-yellow-500 space-x-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p class="review_count text-gray-400">(255)</p>
+                </div>
+              </div>
+              <!-- end of product content -->
+              <button
+                class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+                Add to Cart
+              </button>
+            </div>
+            <!-- end of single product list -->
+
+            <!-- Single Product list -->
+            <div class="single_product bg-white shadow-sm border rounded group">
+              <div class="product_img_wrap relative">
+                <img
+                  src="./images/products/product8.jpg"
+                  class="w-full object-cover" />
+                <div
+                  class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                  <a
+                    href="#"
+                    class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                    <i class="fas fa-search"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product_content p-3 space-y-2">
+                <a
+                  href="#"
+                  class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                  >guyer chair</a
+                >
+                <div class="price flex items-baseline space-x-2">
+                  <span class="new_price text-primary">$45.00</span>
+                  <span class="old_price text-gray-500 line-through"
+                    >$45.00</span
+                  >
+                </div>
+
+                <div class="rating flex space-x-2">
+                  <div class="ration_mark flex text-yellow-500 space-x-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p class="review_count text-gray-400">(255)</p>
+                </div>
+              </div>
+              <!-- end of product content -->
+              <button
+                class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+                Add to Cart
+              </button>
+            </div>
+            <!-- end of single product list -->
+
+            <!-- Single Product list -->
+            <div class="single_product bg-white shadow-sm border rounded group">
+              <div class="product_img_wrap relative">
+                <img
+                  src="./images/products/product9.jpg"
+                  class="w-full object-cover" />
+                <div
+                  class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                  <a
+                    href="#"
+                    class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                    <i class="fas fa-search"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product_content p-3 space-y-2">
+                <a
+                  href="#"
+                  class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                  >guyer chair</a
+                >
+                <div class="price flex items-baseline space-x-2">
+                  <span class="new_price text-primary">$45.00</span>
+                  <span class="old_price text-gray-500 line-through"
+                    >$45.00</span
+                  >
+                </div>
+
+                <div class="rating flex space-x-2">
+                  <div class="ration_mark flex text-yellow-500 space-x-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p class="review_count text-gray-400">(255)</p>
+                </div>
+              </div>
+              <!-- end of product content -->
+              <button
+                class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+                Add to Cart
+              </button>
+            </div>
+            <!-- end of single product list -->
+
+            <!-- Single Product list -->
+            <div class="single_product bg-white shadow-sm border rounded group">
+              <div class="product_img_wrap relative">
+                <img
+                  src="./images/products/product7.jpg"
+                  class="w-full object-cover" />
+                <div
+                  class="product_icon absolute inset-0 bg-black/50 flex items-center justify-center space-x-2 opacity-0 group-hover:opacity-100 transition">
+                  <a
+                    href="#"
+                    class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                    <i class="fas fa-search"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center hover:bg-transparent hover:text-white hover:ring-1 hover:ring-primary transition">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product_content p-3 space-y-2">
+                <a
+                  href="#"
+                  class="uppercase text-xl text-gray-800 font-semibold mb-3"
+                  >guyer chair</a
+                >
+                <div class="price flex items-baseline space-x-2">
+                  <span class="new_price text-primary">$45.00</span>
+                  <span class="old_price text-gray-500 line-through"
+                    >$45.00</span
+                  >
+                </div>
+
+                <div class="rating flex space-x-2">
+                  <div class="ration_mark flex text-yellow-500 space-x-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p class="review_count text-gray-400">(255)</p>
+                </div>
+              </div>
+              <!-- end of product content -->
+              <button
+                class="addToCardBtn text-white bg-primary py-3 w-full rounded-b">
+                Add to Cart
+              </button>
+            </div>
+            <!-- end of single product list -->
+          </div>
+        </div>
+        <!-- end of Product Wrapper -->
+      </div>
+    </section>
+    <!-- End Shope Product -->
+
+    <!-- Start Footer Section -->
+    <footer class="footer_area py-8">
+      <div class="container flex gap-3 bg-white shadow py-6">
+        <!-- Footer Left -->
+        <div class="footer_info w-2/5 space-y-6">
+          <a href="#" class="">
+            <img src="./images/logo.svg" class="w-30" />
+          </a>
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ea
+            dignissimos earum asperiores natus nobis?
+          </p>
+
+          <div class="social_info text-gray-400 flex gap-5">
+            <a href="#" class="hover:text-primary transition"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="hover:text-primary transition"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="hover:text-primary transition"
+              ><i class="fab fab fa-instagram-square"></i
+            ></a>
+            <a href="#" class="hover:text-primary transition"
+              ><i class="fab fab fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <!-- end of Footer Left -->
+
+        <!-- Footer Links -->
+        <div class="footer_links w-3/5">
+          <div class="links_wrapper grid grid-cols-4 gap-3">
+            <!-- single links -->
+            <div class="single_links text-gray-500 grid space-y-4">
+              <h3 class="text-gray-700 uppercase">solution</h3>
+
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >marketing</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >analytics</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >commerce</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >insights</a
+              >
+            </div>
+            <!-- end of single links -->
+
+            <!-- single links -->
+            <div class="single_links text-gray-500 grid space-y-4">
+              <h3 class="text-gray-700 uppercase">support</h3>
+
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >pricing</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >documentation</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >guides</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >API status</a
+              >
+            </div>
+            <!-- end of single links -->
+
+            <!-- single links -->
+            <div class="single_links text-gray-500 grid space-y-4">
+              <h3 class="text-gray-700 uppercase">company</h3>
+
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >about</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >blog</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >jobs</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >press</a
+              >
+            </div>
+            <!-- end of single links -->
+
+            <!-- single links -->
+            <div class="single_links text-gray-500 grid space-y-4 divide-2">
+              <h3 class="text-gray-700 uppercase">legal</h3>
+
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >claim</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >privacy</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >policy</a
+              >
+              <a href="#" class="capitalize hover:text-gray-800 transition"
+                >terms</a
+              >
+            </div>
+            <!-- end of single links -->
+          </div>
+        </div>
+        <!-- end of Footer Links -->
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- Start Footer Bottom Section -->
+    <section class="footer_bottom_area py-8 bg-gray-800">
+      <div class="container flex items-center justify-between">
+        <p class="text-white">&amp; RAFCAT all right reserve</p>
+        <img src="./images/methods.png" class="max-w-[150px]" />
+      </div>
+    </section>
+    <!-- End Footer Bottom Section -->
+  </body>
+</html>

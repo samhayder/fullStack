@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 p-0 bg-primary text-white tracking-wide;
+  }
+
+  section {
+    @apply w-full lg:h-[100vh];
+  }
+
+  ul li a {
+    @apply hover:text-secondary ease-in duration-200;
+  }
+}
+
+.close_icon {
+  @apply ring ring-secondary text-secondary;
+}
+
+.btn-primary {
+  @apply bg-secondary text-white px-10 py-3 capitalize font-bold text-xl rounded-sm hover:opacity-80;
+}
+.card_btn {
+  @apply bg-gray capitalize py-3 w-full rounded-xl mt-5 hover:bg-secondary ease-in duration-300;
+}
+
+.title {
+  @apply text-3xl md:text-4xl font-bold capitalize leading-snug;
+}
+
+.blob_top {
+  @apply w-40 h-40 md:w-80 md:h-80 bg-blob absolute top-20 -left-5 -z-10 blur-2xl rounded-full opacity-50 overflow-hidden;
+}
+
+.blob_bottom {
+  @apply w-40 h-40 md:w-80 md:h-80 bg-secondary absolute bottom-20 right-0 -z-10 blur-2xl rounded-full opacity-50 overflow-hidden;
+}
+
+.user_thumbnail.user_thumb_active {
+  @apply ring-4 ring-secondary;
+}
+
+.user_text {
+  @apply hidden;
+}
+.user_text.user_text_active {
+  display: block;
+  animation: moveUp 1s ease-in-out forwards;
+}
+
+@keyframes moveUp {
+  0% {
+    margin-top: 40px;
+    opacity: 0;
+  }
+  50% {
+    margin-top: 20px;
+    opacity: 0.1;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.price_card {
+  perspective: 1000px;
+}
+.front,
+.back {
+  backface-visibility: hidden;
+  transition: all 0.5s ease-in;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.-rotate-y-180 {
+  transform: rotateY(-180deg);
+}

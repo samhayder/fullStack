@@ -1,0 +1,35 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-poppins text-gray-400;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-roboto;
+  }
+}
+
+@layer components {
+  .category_list input:checked + label {
+    color: #758599;
+  }
+
+  .size_filter input:checked + label {
+    background-color: #fd3d57;
+    color: #fff;
+  }
+
+  .color_filter input:checked + label {
+    border: 2px solid #fd3d57;
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="to_do_list_area w-screen h-screen flex justify-center py-2">
+      <div class="container w-[90vw] p-2">
+        <h1 class="text-center font-bold text-2xl">To Do List</h1>
+
+        <form
+          class="form_list px-2 py-3 rounded-xl shadow-lg grid grid-cols-3 gap-2">
+          <p class="message m-0 px-3 text-red-400 col-span-12"></p>
+
+          <div class="form_group">
+            <input
+              type="text"
+              class="form_input titleInput"
+              required="required" />
+            <label class="form_label">Title</label>
+          </div>
+
+          <div class="form_group col-span-8">
+            <input
+              type="text"
+              class="form_input descriptionInput"
+              required="required" />
+            <label class="form_label">Description</label>
+          </div>
+
+          <div class="form_submit col-span-2">
+            <button
+              class="add_list_btn bg-[#2563eb] text-white px-3 py-2 rounded-lg">
+              Add List
+            </button>
+          </div>
+        </form>
+        <!-- end of inputs list item -->
+
+        <div class="lists_title my-5">
+          <ul
+            class="item list-none py-3 mb-3 bg-gray-200 shadow-xl rounded-lg grid grid-cols-12 gap-2">
+            <p class="title p-2 border-b-2 col-span-3">Title</p>
+            <p class="description p-2 border-b-2 col-span-7">Description</p>
+            <p class="edit p-2 border-b-2 col-span-1">Edit</p>
+            <p class="trash p-2 border-b-2 col-span-1">Trash</p>
+          </ul>
+        </div>
+
+        <div
+          class="lists_area shadow-lg h-[400px] overflow-auto overflow-x-hidden">
+          <!-- <ul class="item list-none mb-3 p-2 border-b-2 grid grid-cols-12 gap-2">
+            <p class="title col-span-3">Title</p>
+            <p class="description col-span-7">Description</p>
+            <p class="edit col-span-1">
+              <img src="./icon/edit.svg" class="max-h-[20px]" />
+            </p>
+            <p class="trash col-span-1">
+              <img src="./icon/trash.svg" class="max-h-[20px]" />
+            </p>
+          </ul> -->
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Form</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="prose">
+    <section
+      class="name_area w-screen h-screen py-5 flex items-center justify-center">
+      <div
+        class="container w-[60vw] lg:w-[40vw] p-5 border-2 shadow rounded-xl">
+        <h3 class="title text-center">Create a Google Account</h3>
+        <p class="text-center">Enter your name</p>
+
+        <form class="name_form py-4">
+          <div class="form_group mb-4">
+            <input
+              type="text"
+              class="form_input firstName"
+              required="required" />
+            <label class="form_label">First Name</label>
+          </div>
+
+          <div class="form_group">
+            <input
+              type="text"
+              class="form_input lastName"
+              required="required" />
+            <label class="form_label">Last Name</label>
+          </div>
+
+          <p class="message text-red-500 mt-0"></p>
+
+          <div class="form_btn w-full flex justify-end">
+            <button
+              class="nextBtn bg-blue-600 text-white px-4 py-1 rounded-md shadow delay-500 hover:bg-blue-500">
+              Next
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
