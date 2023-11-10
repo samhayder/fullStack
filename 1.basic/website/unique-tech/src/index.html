@@ -99,7 +99,9 @@
     <!-- End header -->
 
     <!-- Start homepage -->
-    <section class="homepage_area py-6 bg-primary relative flex items-center">
+    <section
+      class="homepage_area py-6 bg-primary relative flex items-center"
+      id="home">
       <div class="container grid lg:grid-cols-2 m-auto gap-5">
         <!-- homepage text -->
         <div class="homepage_text pt-16">
@@ -186,9 +188,550 @@
     </section>
     <!-- End homepage -->
 
-    <!-- Start header -->
-    <!-- <section class="header_area py-6 bg-secondary"></section> -->
-    <!-- End header -->
+    <!-- Start service -->
+    <section class="service_area h-full py-6 bg-white" id="service">
+      <div class="container">
+        <div class="title_btn relative py-[120px] flex justify-center">
+          <div
+            class="btn-primary px-20 py-4 text-2xl font-bold border-transparent rounded-lg">
+            what we do
+          </div>
+          <img
+            src="./img/arrow-sign.png"
+            class="absolute top-[50%] right-0 lg:right-[30%]" />
+        </div>
+        <!-- end of section title -->
+
+        <!-- single service wrapper 1 -->
+        <div class="service_wrapper grid lg:grid-cols-2 gap-5 mb-16">
+          <img src="./img/homepage_mackbook.png" class="object-cover pr-12" />
+
+          <div class="service_content pr-5">
+            <h2 class="sub_title uppercase text-lg font-bold mb-4">
+              WEB DESIGN
+            </h2>
+            <p class="text-sm mb-4 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo
+            </p>
+            <p class="leading-relaxed">
+              consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est. laborum.
+            </p>
+
+            <button class="btn-secondary px-10 py-4 my-5">view more</button>
+          </div>
+        </div>
+        <!-- end of single service wrapper 1 -->
+
+        <!-- single service wrapper 2 -->
+        <div class="service_wrapper grid lg:grid-cols-2 gap-5 mb-16">
+          <div class="service_content pr-5">
+            <h2 class="sub_title uppercase text-lg font-bold mb-4">
+              SEARCH ENGINE OPTIMIZATION
+            </h2>
+            <p class="text-sm mb-4 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo
+            </p>
+            <p class="leading-relaxed">
+              consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est. laborum.
+            </p>
+
+            <button class="btn-secondary px-10 py-4 my-5">view more</button>
+          </div>
+
+          <img src="./img/homepage_mackbook.png" class="object-cover pl-12" />
+        </div>
+        <!-- end of single service wrapper 2 -->
+
+        <!-- single service wrapper 3 -->
+        <div class="service_wrapper grid lg:grid-cols-2 gap-5 mb-16">
+          <img src="./img/homepage_mackbook.png" class="object-cover pr-12" />
+
+          <div class="service_content pr-5">
+            <h2 class="sub_title uppercase text-lg font-bold mb-4">
+              AFFILIATE MARKETTING
+            </h2>
+            <p class="text-sm mb-4 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo
+            </p>
+            <p class="leading-relaxed">
+              consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est. laborum.
+            </p>
+
+            <button class="btn-secondary px-10 py-4 my-5">view more</button>
+          </div>
+        </div>
+        <!-- end of single service wrapper 3 -->
+      </div>
+    </section>
+    <!-- End service -->
+
+    <!-- Start work -->
+    <section class="work_area h-full py-6 bg_gradient" id="work">
+      <div class="container">
+        <div class="title_btn relative py-[120px] flex justify-center">
+          <div
+            class="btn-primary px-20 py-4 text-2xl font-bold border-transparent rounded-lg">
+            how we work
+          </div>
+          <img
+            src="./img/arrow-sign.png"
+            class="img_rotateY absolute top-[50%] left-0 lg:left-[30%]" />
+        </div>
+        <!-- end of section title -->
+
+        <!-- work wrapper -->
+        <div class="work_wrapper flex justify-center">
+          <img src="./img/work_img.png" class="object-cover" />
+        </div>
+        <!-- end of work wrapper -->
+      </div>
+    </section>
+    <!-- End work -->
+
+    <!-- Start features -->
+    <section class="features_area py-6 h-full" id="features">
+      <div class="container">
+        <div class="title_btn relative py-[120px] flex justify-center">
+          <div
+            class="btn-primary px-20 py-4 text-2xl font-bold border-transparent rounded-lg">
+            our features
+          </div>
+          <img
+            src="./img/arrow-sign.png"
+            class="absolute top-[50%] right-0 lg:right-[30%]" />
+        </div>
+        <!-- end of section title -->
+
+        <!-- feature wrapper 1 -->
+        <div class="feature_wrapper grid lg:grid-cols-3 gap-5 mb-5">
+          <!-- card -->
+          <div class="card group">
+            <div class="card_icon text-2xl group-hover:text-white">
+              <i class="fa-solid fas fa-video"></i>
+            </div>
+            <div class="card_content">
+              <h2 class="capitalize text-lg font-bold">Visual Composer</h2>
+              <p>
+                TheFox comes with the Visual Composer Plugin. You won’t need to
+                code or to remember any shortcodes with our. Theme.
+              </p>
+            </div>
+          </div>
+          <!-- end of card 1-->
+
+          <!-- card -->
+          <div class="card group">
+            <div class="card_icon text-2xl group-hover:text-white">
+              <i class="fa-solid fas fa-desktop"></i>
+            </div>
+            <div class="card_content">
+              <h2 class="capitalize text-lg font-bold">Responsive</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem.
+              </p>
+            </div>
+          </div>
+          <!-- end of card 2-->
+
+          <!-- card -->
+          <div class="card group">
+            <div class="card_icon text-2xl group-hover:text-white">
+              <i class="fa-solid fas fa-laptop"></i>
+            </div>
+            <div class="card_content">
+              <h2 class="capitalize text-lg font-bold">Retina Ready</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate.
+              </p>
+            </div>
+          </div>
+          <!-- end of card 3-->
+        </div>
+        <!-- end of  feature wrapper 1 -->
+
+        <!-- feature wrapper 2 -->
+        <div class="feature_wrapper grid lg:grid-cols-3 gap-5 mb-5">
+          <!-- card -->
+          <div class="card group">
+            <div class="card_icon text-2xl group-hover:text-white">
+              <i class="fa-solid fas fa-pen"></i>
+            </div>
+            <div class="card_content">
+              <h2 class="capitalize text-lg font-bold">Typography</h2>
+              <p>
+                TheFox comes with the Visual Composer Plugin. You won’t need to
+                code or to remember any shortcodes with our Theme.
+              </p>
+            </div>
+          </div>
+          <!-- end of card 4-->
+
+          <!-- card -->
+          <div class="card group">
+            <div class="card_icon text-2xl group-hover:text-white">
+              <i class="fa-solid fas fa-briefcase"></i>
+            </div>
+            <div class="card_content">
+              <h2 class="capitalize text-lg font-bold">Theme Options Pannel</h2>
+              <p>
+                TheFox comes with the Visual Composer Plugin. You won’t need to
+                code or to remember any shortcodes with our Theme.
+              </p>
+            </div>
+          </div>
+          <!-- end of card 5-->
+
+          <!-- card -->
+          <div class="card group">
+            <div class="card_icon text-2xl group-hover:text-white">
+              <i class="fa-solid fas fa-arrows-to-circle"></i>
+            </div>
+            <div class="card_content">
+              <h2 class="capitalize text-lg font-bold">Dummy Content</h2>
+              <p>
+                TheFox comes with the Visual Composer Plugin. You won’t need to
+                code or to remember any shortcodes with our Theme.
+              </p>
+            </div>
+          </div>
+          <!-- end of card 6-->
+        </div>
+        <!-- end of  feature wrapper 2 -->
+
+        <!-- feature wrapper 3 -->
+        <div class="feature_wrapper grid lg:grid-cols-3 gap-5 mb-5">
+          <!-- card -->
+          <div class="card group">
+            <div class="card_icon text-2xl group-hover:text-white">
+              <i class="fa-solid fas fa-globe"></i>
+            </div>
+            <div class="card_content">
+              <h2 class="capitalize text-lg font-bold">Many Style Available</h2>
+              <p>
+                TheFox comes with the Visual Composer Plugin. You won’t need to
+                code or to remember any shortcodes with our Theme.
+              </p>
+            </div>
+          </div>
+          <!-- end of card 7-->
+
+          <!-- card -->
+          <div class="card group">
+            <div class="card_icon text-2xl group-hover:text-white">
+              <i class="fa-solid fas fa-border-style"></i>
+            </div>
+            <div class="card_content">
+              <h2 class="capitalize text-lg font-bold">Header Style</h2>
+              <p>
+                TheFox comes with the Visual Composer Plugin. You won’t need to
+                code or to remember any shortcodes with our Theme.
+              </p>
+            </div>
+          </div>
+          <!-- end of card 8-->
+
+          <!-- card -->
+          <div class="card group">
+            <div class="card_icon text-2xl group-hover:text-white">
+              <i class="fa-solid fas fa-shopping-bag"></i>
+            </div>
+            <div class="card_content">
+              <h2 class="capitalize text-lg font-bold">10000+ icons</h2>
+              <p>
+                TheFox comes with the Visual Composer Plugin. You won’t need to
+                code or to remember any shortcodes with our Theme.
+              </p>
+            </div>
+          </div>
+          <!-- end of card 9-->
+        </div>
+        <!-- end of  feature wrapper 3 -->
+
+        <!-- feature wrapper 4 -->
+        <div class="feature_wrapper grid lg:grid-cols-3 gap-5 mb-5">
+          <!-- card -->
+          <div class="card group">
+            <div class="card_icon text-2xl group-hover:text-white">
+              <i class="fa-solid fas fa-satellite-dish"></i>
+            </div>
+            <div class="card_content">
+              <h2 class="capitalize text-lg font-bold">Support</h2>
+              <p>
+                TheFox comes with the Visual Composer Plugin. You won’t need to
+                code or to remember any shortcodes with our Theme.
+              </p>
+            </div>
+          </div>
+          <!-- end of card 10-->
+
+          <!-- card -->
+          <div class="card group">
+            <div class="card_icon text-2xl group-hover:text-white">
+              <i class="fa-solid fas fa-gem"></i>
+            </div>
+            <div class="card_content">
+              <h2 class="capitalize text-lg font-bold">Update</h2>
+              <p>
+                TheFox comes with the Visual Composer Plugin. You won’t need to
+                code or to remember any shortcodes with our Theme.
+              </p>
+            </div>
+          </div>
+          <!-- end of card 11-->
+
+          <!-- card -->
+          <div class="card group">
+            <div class="card_icon text-2xl group-hover:text-white">
+              <i class="fa-solid fas fa-trophy"></i>
+            </div>
+            <div class="card_content">
+              <h2 class="capitalize text-lg font-bold">SEO Ready</h2>
+              <p>
+                TheFox comes with the Visual Composer Plugin. You won’t need to
+                code or to remember any shortcodes with our Theme.
+              </p>
+            </div>
+          </div>
+          <!-- end of card 12-->
+        </div>
+        <!-- end of  feature wrapper 3 -->
+      </div>
+    </section>
+    <!-- End features -->
+
+    <!-- Start packages -->
+    <section class="packages_area py-6" id="packages">
+      <div class="container">
+        <div class="title_btn relative py-[120px] flex justify-center">
+          <div
+            class="btn-primary px-20 py-4 text-2xl font-bold border-transparent rounded-lg">
+            our packages
+          </div>
+          <img
+            src="./img/arrow-sign.png"
+            class="img_rotateY absolute top-[50%] left-0 lg:left-[30%]" />
+        </div>
+        <!-- end of section title -->
+
+        <!-- packges wrapper -->
+        <div
+          class="packages_wrapper grid lg:grid-cols-3 divide-x divide-x-primary">
+          <!-- package card 1 -->
+          <div class="package_card text-center text-gray-400 py-5 mb-8 lg:mb-0">
+            <h2 class="capitalize text-2xl mb-8">Basic</h2>
+            <ul class="card_list space-y-3">
+              <li class="py-3 border-b border-primary">5 web sites</li>
+              <li class="py-3 border-b border-primary">15 e-mails</li>
+              <li class="py-3 border-b border-primary">5 MySQL databases</li>
+              <li class="py-3 border-b border-primary">10 GB storage</li>
+            </ul>
+            <h2 class="price text-5xl mt-7 mb-10">
+              $5<span class="text-sm">/mo</span>
+            </h2>
+            <button class="btn text-white px-6 py-3 bg-gray-400">
+              order now
+            </button>
+          </div>
+          <!-- end of package card 1 -->
+
+          <!-- package card 2 -->
+          <div class="package_card text-center py-5 mb-8 lg:mb-0">
+            <h2 class="capitalize text-2xl mb-8 text-[#f26c4f]">Standard</h2>
+            <ul class="card_list space-y-3">
+              <li class="font-bold py-3 border-b border-primary">
+                15 web sites
+              </li>
+              <li class="font-bold py-3 border-b border-primary">40 e-mails</li>
+              <li class="font-bold py-3 border-b border-primary">
+                250 MySQL databases
+              </li>
+              <li class="font-bold py-3 border-b border-primary">
+                50 GB storage
+              </li>
+            </ul>
+            <h2 class="price text-5xl mt-7 mb-10 text-[#f26c4f]">
+              $12<span class="text-sm">/mo</span>
+            </h2>
+            <button class="btn text-white bg-[#f26c4f] px-6 py-4">
+              order now
+            </button>
+          </div>
+          <!-- end of package card 2 -->
+
+          <!-- package card 3 -->
+          <div class="package_card text-center py-5 mb-8 lg:mb-0">
+            <h2 class="capitalize text-2xl mb-8 text-primary">Premium</h2>
+            <ul class="card_list space-y-3">
+              <li class="py-3 border-b border-primary">50 web sites</li>
+              <li class="py-3 border-b border-primary">100 e-mails</li>
+              <li class="py-3 border-b border-primary">500 MySQL databases</li>
+              <li class="py-3 border-b border-primary">100 GB storage</li>
+            </ul>
+            <h2 class="price text-5xl mt-7 mb-10 text-primary">
+              $19<span class="text-sm">/mo</span>
+            </h2>
+            <button class="btn text-white bg-primary px-6 py-3">
+              order now
+            </button>
+          </div>
+          <!-- end of package card 3 -->
+        </div>
+        <!-- end of packages wrapper -->
+      </div>
+    </section>
+    <!-- End packages -->
+
+    <!-- Start history -->
+    <section
+      class="history_area bg_gradient py-6 flex items-center"
+      id="history">
+      <div class="container grid lg:grid-cols-2 gap-5">
+        <div class="history_img bg-gray-200 p-5 rounded-sm">
+          <img src="./img/history_img.png" class="w-full object-cover" />
+        </div>
+
+        <!-- history content -->
+        <div class="history_content">
+          <div class="title_btn relative pb-5 inline-block">
+            <div
+              class="btn-primary px-16 py-4 text-2xl font-bold border-transparent rounded-lg">
+              our history
+            </div>
+          </div>
+          <!-- end of section title -->
+          <p class="leading-8 mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse. <br />
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+            unde omnis iste natus error sit voluptatem accusantium doloremque
+            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            veritatisquasi architecto beatae vitae dicta sunt explicabo. Nemo
+            enim ipsam voluptatem quia voluptas sit aspernatur.
+          </p>
+          <button class="btn-secondary px-5 py-3">BROWSE OUR Story</button>
+        </div>
+        <!-- end of history content -->
+      </div>
+    </section>
+    <!-- End history -->
+
+    <!-- Start footer -->
+    <footer class="footer_area py-6 bg-[#363636] text-white" id="footer">
+      <div class="container">
+        <div class="footer_top grid grid-cols-2 lg:grid-cols-4 gap-5 space-y-5">
+          <!-- single footer 1-->
+          <div class="single_footer">
+            <h2 class="uppercase text-lg mb-6">portfolio</h2>
+            <ul class="space-y-3">
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Branding & Identity</a></li>
+              <li><a href="#">Mobile Design</a></li>
+              <li><a href="#">Print</a></li>
+              <li><a href="#">User Interface</a></li>
+            </ul>
+          </div>
+          <!-- end of single footer 1-->
+
+          <!-- single footer 2-->
+          <div class="single_footer">
+            <h2 class="uppercase text-lg mb-6">about</h2>
+            <ul class="space-y-3">
+              <li><a href="#">the company</a></li>
+              <li><a href="#">history</a></li>
+              <li><a href="#">vision</a></li>
+            </ul>
+          </div>
+          <!-- end of single footer 2-->
+
+          <!-- single footer 3-->
+          <div class="single_footer">
+            <h2 class="uppercase text-lg mb-6">gallery</h2>
+            <ul class="space-y-3">
+              <li><a href="#">Flickr</a></li>
+              <li><a href="#">Picasa</a></li>
+              <li><a href="#">iStockPhoto</a></li>
+              <li><a href="#">PhotoDune</a></li>
+            </ul>
+          </div>
+          <!-- end of single footer 3-->
+
+          <!-- single footer 4-->
+          <div class="single_footer">
+            <h2 class="uppercase text-lg mb-6">contact</h2>
+            <ul class="space-y-3">
+              <li><a href="#">Basic Info </a></li>
+              <li><a href="#">Map </a></li>
+              <li><a href="#">Conctact Form</a></li>
+            </ul>
+          </div>
+          <!-- end of single footer 4-->
+        </div>
+        <!-- end of footer top -->
+
+        <div class="social text-center py-5 space-x-3">
+          <button class="btn-secondary p-3">
+            <i class="fa-solid fab fa-facebook-f"></i>
+          </button>
+          <button class="btn-secondary p-3">
+            <i class="fa-solid fab fa-twitter"></i>
+          </button>
+          <button class="btn-secondary p-3">
+            <i class="fa-solid fab fa-google-plus"></i>
+          </button>
+          <button class="btn-secondary p-3">
+            <i class="fa-solid fab fa-linkedin"></i>
+          </button>
+        </div>
+        <!-- end of footer social -->
+
+        <div class="copyright text-center py-5">
+          Copyright © 2015 Syed Miraj.All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
 
     <script src="./js/main.js"></script>
   </body>
