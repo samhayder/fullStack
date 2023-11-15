@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daraz | Clone</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Font Awesome Kit -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- Start header -->
+    <header class="header_area w-full bg-primary" id="header">
+      <div class="container">
+        <!-- header top -->
+        <div class="header_top hidden lg:flex justify-between">
+          <ul class="flex space-x-5">
+            <li>
+              <a
+                href="#"
+                class="capitalize text-white text-xs hover:shadow-sm hover:opacity-80 effect_ease"
+                >Become a seller</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="capitalize text-white text-xs hover:shadow-sm hover:opacity-80 effect_ease"
+                >Daraz Donates</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="capitalize text-white text-xs hover:shadow-sm hover:opacity-80 effect_ease"
+                >Help & Support</a
+              >
+            </li>
+          </ul>
+          <div class="app_store relative group">
+            <button
+              class="btn flex items-center text-white text-sm bg-[#AD3C04] p-1 rounded-b-md capitalize hover:opacity-90 effect_ease">
+              <img src="./img/btn_logo.png" class="w-4 h-4 object-cover mr-2" />
+              save more on App
+            </button>
+
+            <div
+              class="download_app opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:z-10 effect_ease">
+              <h2 class="capitalize text-sm text-red-400 text-center">
+                Enjoy more discount with daraz App
+              </h2>
+
+              <button
+                class="w-[210px] bg-black text-white px-5 py-1 rounded-md flex items-center space-x-3">
+                <i class="fa-solid fab fa-google-play text-3xl"></i>
+                <span>
+                  <p class="text-xs">get it on</p>
+                  <p class="text-2xl">Google Play</p>
+                </span>
+              </button>
+
+              <button
+                class="w-[210px] bg-black text-white px-5 py-1 rounded-md flex items-center space-x-3">
+                <i class="fa-solid fab fa-apple text-3xl"></i>
+                <span>
+                  <p class="text-xs">download on the</p>
+                  <p class="text-2xl">App Store</p>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- end of  header top -->
+
+        <!-- main header -->
+        <div
+          class="main_header text-white flex flex-wrap-reverse lg:flex-nowrap items-center justify-between py-2">
+          <a href="#" class="logo hidden md:block"
+            ><img src="./img/logo.png" class="max-h-[50px] object-cover"
+          /></a>
+          <!-- end of logo -->
+
+          <form action="#" class="w-[100vw] md:w-[55vw] lg:w-[55vw] relative">
+            <input
+              type="text"
+              placeholder="Search in Daraz"
+              class="search w-full p-2 text-gray-800 rounded-lg focus:outline-none" />
+            <button
+              class="absolute top-[10%] right-2 text-red-500 bg-[#FFE1D2] px-4 py-1 rounded-xl h-[80%]">
+              <i class="fa-solid fas fa-search"></i>
+            </button>
+          </form>
+          <!-- end of search input -->
+
+          <div class="login_buttons">
+            <button class="loginBtn btn">
+              <i class="fa-solid fas fa-user pr-2"></i>
+              Login
+            </button>
+            <span class="mx-1">|</span>
+            <button class="signUpBtn btn">Sign Up</button>
+          </div>
+          <!-- end of login buttons -->
+
+          <div class="translate_languages relative group">
+            <button class="btn" value="EN">
+              <i class="fa-solid fas fa-globe pr-1"></i>
+              <span class="languagesBtn">EN</span>
+              <span class="text-xs"
+                ><i class="fa-solid fas fa-angle-down"></i
+              ></span>
+            </button>
+
+            <div
+              class="select_language opacity-0 invisible group-hover:opacity-100 group-hover:visible effect_ease z-10 flex flex-col space-y-4">
+              <p class="">Select language</p>
+
+              <a href="#" value="EN" class="relative languageCheck"
+                >EN/English</a
+              >
+              <a href="#" value="BN" class="relative">Bn/Bangla</a>
+            </div>
+          </div>
+          <!-- end of translate languages -->
+
+          <div class="cart btn">
+            <i class="fa-solid fas fa-shopping-cart text-2xl"></i>
+          </div>
+        </div>
+        <!-- end of main header -->
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start header -->
+    <!-- <section class="header_area" id="header"></section> -->
+    <!-- End header -->
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
