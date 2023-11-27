@@ -106,3 +106,11 @@ body {
   height: 345px;
   margin-left: 13px;
 }
+
+.dot {
+  @apply w-3 h-3 bg-gray-200 rounded-full cursor-pointer;
+}
+
+.dotActive {
+  @apply bg-white ring;
+}

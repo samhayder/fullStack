@@ -2939,8 +2939,71 @@
         </nav>
         <!-- end of nav -->
 
-        <div class="slider_area border border-primary">
-          
+        <div class="slider_area relative">
+          <div
+            class="slider_carousel w-full h-full flex whitespace-nowrap overflow-hidden scroll-smooth">
+            <a href="#" class="slider">
+              <img
+                src="./img/slider_img_1.jpg"
+                class="max-w-[940px] h-full object-cover" />
+            </a>
+            <a href="#" class="slider">
+              <img
+                src="./img/slider_img_2.jpg"
+                class="max-w-[940px] h-full object-cover" />
+            </a>
+            <a href="#" class="slider">
+              <img
+                src="./img/slider_img_3.jpg"
+                class="max-w-[940px] h-full object-cover" />
+            </a>
+            <a href="#" class="slider">
+              <img
+                src="./img/slider_img_4.jpg"
+                class="max-w-[940px] h-full object-cover" />
+            </a>
+            <a href="#" class="slider">
+              <img
+                src="./img/slider_img_5.jpg"
+                class="max-w-[940px] h-full object-cover" />
+            </a>
+            <a href="#" class="slider">
+              <img
+                src="./img/slider_img_6.jpg"
+                class="max-w-[940px] h-full object-cover" />
+            </a>
+          </div>
+          <!-- end of slider carousel -->
+
+          <!-- slider angle -->
+          <div
+            class="slider_navigation w-full absolute top-1/2 transform -translate-y-1/2 flex justify-between">
+            <span
+              id="forward"
+              class="text-white text-xl bg-black bg-opacity-30 py-4 px-2 rounded-r-md cursor-pointer"
+              ><i class="fa-solid fas fa-angle-left"></i
+            ></span>
+            <span
+              id=" backward"
+              class="text-white text-xl bg-black bg-opacity-30 py-4 px-2 rounded-l-md cursor-pointer"
+              ><i class="fa-solid fas fa-angle-right"></i
+            ></span>
+          </div>
+          <!-- end of slider angle -->
+
+          <!-- slider dots -->
+          <div
+            class="dots absolute left-1/2 bottom-[10%] transform -translate-x-1/2">
+            <ul class="flex space-x-3">
+              <li class="dot dotActive"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+            </ul>
+          </div>
+          <!-- end of slider dots -->
         </div>
       </div>
     </section>
