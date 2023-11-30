@@ -94,3 +94,35 @@ dots.forEach((dot, index) => {
   });
 });
  -->
+
+<!--  Countdown  -->
+<!-- 
+let countDownEndTime = new Date("29 December 2023 10:51: PM");
+
+const countDown = setInterval(() => {
+  let currentTime = new Date();
+  let distance = (countDownEndTime - currentTime) / 1000;
+
+  /* Calculate Time */
+  let days = Math.floor(distance / 3600 / 24); // seconds / hours
+
+  let hours = Math.floor((distance / 3600) % 24); // seconds % hours
+
+  let minutes = Math.floor((distance / 60) % 60); // minutes % minutes
+
+  let seconds = Math.floor(distance % 60); // minutes
+
+  /* DOM */
+  document.querySelector(".hours").innerText = hours;
+  document.querySelector(".minutes").innerText = minutes;
+  document.querySelector(".seconds").innerText = seconds;
+
+  /* clear setInterval */
+  if (distance < 0) {
+    clearInterval(countDown);
+    document.querySelector(".hours").innerText = '00';
+    document.querySelector(".minutes").innerText = '00';
+    document.querySelector(".seconds").innerText = '00';
+  }
+}, 1000); 
+-->
