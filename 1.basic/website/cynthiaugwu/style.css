@@ -11,3 +11,24 @@
 .hover_effect::after {
   transition: all 1.3s ease;
 }
+
+/* Service Section CSS */
+.single_service {
+  @apply relative border-t py-[5vh] lg:py-[3.5vh] flex items-center justify-between;
+}
+
+.service_title {
+  @apply uppercase text-[10vw] lg:text-[8vw] opacity-70;
+}
+
+.service_img {
+  @apply absolute h-full inset-0 z-50 opacity-0;
+}
+
+/* Animation CSS */
+.animation_wap {
+  @apply w-fit overflow-hidden;
+}
+.animation_content {
+  @apply transform translate-y-full;
+}

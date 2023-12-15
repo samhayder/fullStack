@@ -6,17 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cyntiaugwu clone</title>
 
+    <!-- Icon -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css"
       rel="stylesheet" />
 
+    <!-- Smooth Scroll CSS -->
+    <link
+      rel="stylesheet"
+      href="./src/assest/stylesheets/locomotive-scroll.css" />
+
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <div id="main" class="main w-full h-auto font-oxygen">
+  <body class="bg-black">
+    <!-- move mouse circle -->
+    <div
+      class="move_circle absolute w-3 h-3 rounded-full bg-white bg-opacity-70 z-50 transition-all duration-1000 ease-[cubic-bezier(0.19,1,0.22,1)]"></div>
+
+    <div id="main" class="main w-full h-auto font-oxygen bg-black relative">
       <!-- Start Hero Area Section -->
       <section
-        class="hero_area w-full h-screen bg-black text-white p-[2.65vw] relative"
+        class="hero_area hidden w-full h-screen bg-black text-white p-[2.65vw] relative"
         id="hero">
         <!-- Start Header -->
         <header class="header flex items-center justify-between">
@@ -33,16 +43,18 @@
 
         <!-- start hero text -->
         <div class="hero_text py-[11vh]">
-          <h1
-            class="uppercase font-bold text-[15vw] lg:text-[10vw] opacity-60 leading-none">
-            product
-          </h1>
-          <div class="fit-content inline-block">
+          <div class="animation_wap">
             <h1
-              class="uppercase font-bold text-[15vw] lg:text-[10vw] pl-[11vw] opacity-60 pt-0 leading-none">
+              class="animation_content uppercase font-bold text-[15vw] lg:text-[10vw] opacity-60 leading-none">
+              product
+            </h1>
+          </div>
+          <div class="animation_wap">
+            <h1
+              class="animation_content uppercase font-bold text-[15vw] lg:text-[10vw] pl-[11vw] opacity-60 leading-none overflow-hidden">
               designer
             </h1>
-            <p class="uppercase text-xs lg:text-lg text-end">
+            <p class="animation_content uppercase text-xs lg:text-lg text-end">
               BASED IN TORONTO
             </p>
           </div>
@@ -50,34 +62,40 @@
         <!-- end hero text -->
 
         <!-- hero side note -->
-        <div class="side_node text-right uppercase">
-          <h6>AVAILABLE FOR FREELANCE</h6>
-          <h6>WORK FROM MAY 23'</h6>
+        <div class="side_node  uppercase flex flex-col items-end ">
+          <div class="animation_wap">
+            <h6 class="animation_content">AVAILABLE FOR FREELANCE</h6>
+          </div>
+          <div class="animation_wap">
+            <h6 class="animation_content">WORK FROM MAY 23'</h6>
+          </div>
         </div>
         <!-- end of side note -->
 
         <!-- start hero footer -->
         <div
-          class="hero_footer w-[calc(100%-5vw)] flex flex-wrap gap-3 items-center justify-between absolute bottom-[2%]">
-          <a href="#" class="hover_effect group"
+          class="hero_footer w-[calc(100%-5vw)] flex items-center justify-between absolute bottom-[2%]">
+          <a href="#" class="uppercase text-sm hover_effect group"
             >CURRENTLY WORKING AT YML
             <span
               class="group-hover:transform group-hover:rotate-45 group-hover:inline-block"
               ><i class="ri-arrow-right-up-line"></i></span
           ></a>
 
-          <a href="#" class="hover_effect group"
+          <a href="#" class="uppercase text-sm hover_effect group"
             >PROTOPIE AMBASSADOR
             <span
               class="group-hover:transform group-hover:rotate-45 group-hover:inline-block"
               ><i class="ri-arrow-right-up-line"></i></span
           ></a>
 
-          <div class="hero_icons flex gap-2">
-            <span class="bg-gray-400 text-black rounded-full w-5 h-5 flex items-center justify-center cursor-pointer"
+          <div class="hero_icons hidden lg:flex gap-2">
+            <span
+              class="bg-gray-400 text-black rounded-full w-5 h-5 flex items-center justify-center cursor-pointer"
               ><i class="ri-arrow-down-line"></i
             ></span>
-            <span class="bg-gray-400 text-black rounded-full w-5 h-5 flex items-center justify-center cursor-pointer"
+            <span
+              class="bg-gray-400 text-black rounded-full w-5 h-5 flex items-center justify-center cursor-pointer"
               ><i class="ri-arrow-down-line"></i
             ></span>
           </div>
@@ -85,8 +103,109 @@
         <!-- end of hero footer -->
       </section>
       <!-- End Hero Area Section -->
+
+      <!-- Start service Area Section -->
+      <section
+        class="service_area w-full h-screen bg-black text-white p-[2.65vw] flex items-center"
+        id="service">
+        <div class="service_wrapper w-11/12">
+          <!-- single service 01 -->
+          <div class="single_service">
+            <img src="./src/assest/images/plug.png" class="service_img" />
+            <h2 class="service_title">the plug</h2>
+            <p class="text-sm opacity-80">2022</p>
+          </div>
+          <!-- end of single service 01 -->
+
+          <!-- single service 02 -->
+          <div class="single_service">
+            <img src="./src/assest/images/ixperience.png" class="service_img" />
+            <h2 class="service_title">ixperince</h2>
+            <p class="text-sm opacity-80">2022</p>
+          </div>
+          <!-- end of single service 02 -->
+
+          <!-- single service 03 -->
+          <div class="single_service border-b">
+            <img src="./src/assest/images/hudu.png" class="service_img" />
+            <h2 class="service_title">hudu</h2>
+            <p class="text-sm opacity-80">2021</p>
+          </div>
+          <!-- end of single service 03 -->
+        </div>
+      </section>
+      <!-- End service Area Section -->
+
+      <!-- Start about Area Section -->
+      <section
+        class="about_area w-full h-screen bg-black text-white p-[2.65vw]"
+        id="about">
+        <!-- about content -->
+        <div
+          class="about_content w-11/12 lg:w-[70%] flex flex-wrap lg:flex-nowrap gap-10 items-center ml-auto py-28">
+          <img
+            src="./src/assest/images/cynthia.png"
+            class="about_img w-[220px]" />
+          <div class="about_text px-5">
+            <h6 class="uppercase text-sm opacity-60 mb-1">(about me)</h6>
+            <p class="leading-relaxed">
+              I'm a product designer with a passion for creating products that
+              not only look good but also solve real problems. When I'm not
+              sketching ideas on paper, you can find me binge-watching a Netflix
+              series or playing video games. My design philosophy is simple:
+              make it visually appealing, functional, and bring a smile to
+              people's faces. I'm the designer you want on your team if you want
+              to make people say 'I need that in my life!'.
+            </p>
+            <a
+              href="#"
+              class="px-5 py-1 border rounded-full mt-5 inline-block font-medium"
+              >Let's talk</a
+            >
+          </div>
+        </div>
+        <!-- end of about content -->
+
+        <!-- subscribe  -->
+        <div class="subscribe flex items-center pt-10 pb-32">
+          <div>
+            <h6 class="uppercase text-sm opacity-60">(FORGOT TO MENTION)</h6>
+            <a href="#" class="uppercase hover_effect group"
+              >SUBSCRIBE TO MY YOUTUBE CHANNEL
+              <span
+                class="group-hover:transform group-hover:rotate-45 group-hover:inline-block"
+                ><i class="ri-arrow-right-up-line"></i></span
+            ></a>
+          </div>
+        </div>
+        <!-- end of subscribe  -->
+
+        <!-- Start footer -->
+        <footer
+          class="footer w-full py-5 flex flex-wrap items-center justify-between">
+          <div class="footer_left flex gap-5">
+            <p>2022&copy;</p>
+            <p class="time">11:55 PM EST</p>
+          </div>
+          <!-- end of footer left -->
+
+          <div class="footer_right flex gap-5">
+            <a href="#" class="uppercase text-sm hover_effect">DRIBBBLE</a>
+            <a href="#" class="uppercase text-sm hover_effect">INSTAGRAM</a>
+            <a href="#" class="uppercase text-sm hover_effect">LINKEDIN</a>
+            <a href="#" class="uppercase text-sm hover_effect">TWITTER</a>
+          </div>
+        </footer>
+        <!-- End footer -->
+      </section>
+      <!-- End about Area Section -->
     </div>
 
+    <!-- Smooth Scroll Js -->
+    <script src="./src/assest/javascript/locomotive-scroll.min.js"></script>
+    <!-- gsap (animations) cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <!-- Main Js -->
     <script src="./src/assest/javascript/main.js"></script>
   </body>
 </html>
