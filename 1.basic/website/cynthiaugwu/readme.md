@@ -22,7 +22,10 @@ const scroll = new LocomotiveScroll({
 # Move Mouse Circle Fowler
 
 #### html & css
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4d69fdee4502131aa20cb7eb1e00962831fadae6
 ```html
 <div
   class="move_circle absolute w-3 h-3 rounded-full
