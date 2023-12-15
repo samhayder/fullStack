@@ -23,11 +23,13 @@ const scroll = new LocomotiveScroll({
 
 #### html & css
 
+```html
 <div
   class="move_circle absolute w-3 h-3 rounded-full
    bg-white bg-opacity-70 z-50 transition-all 
    duration-1000 ease-[cubic-bezier(0.19,1,0.22,1)]">
 </div>
+```
 
 #### js
 
@@ -101,6 +103,16 @@ document.querySelectorAll(".single_service").forEach((elem) => {
 });
 ```
 
-#### Credit
+## Credit
 
-> https://cynthiaugwu.com/
+> CSS Framework: https://tailwindcss.com
+
+> Icon: https://remixicon.com
+
+> Smooth Scroll: https://locomotivemtl.github.io/locomotive-scroll
+
+> Animation: https://gsap.com
+
+> Original site: https://cynthiaugwu.com
+
+> Tutor Author: https://www.youtube.com/watch?v=InvSEpJUXu4
