@@ -102,7 +102,12 @@ document.querySelectorAll(".single_service").forEach((elem) => {
 });
 ```
 
-#### Credit
+## Credit
 
-> https://cynthiaugwu.com/
-> https://www.youtube.com/watch?v=InvSEpJUXu4
+> CSS Framework: https://tailwindcss.com
+> Icon: https://remixicon.com
+> Smooth Scroll: https://locomotivemtl.github.io/locomotive-scroll
+> Animation: https://gsap.com
+
+> Original site: https://cynthiaugwu.com
+> Tutor Author: https://www.youtube.com/watch?v=InvSEpJUXu4
