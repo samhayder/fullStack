@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        AvertaCYBold: "AvertaCY-Bold",
         AvertaCY: "AvertaCY-Light",
       },
       colors: {

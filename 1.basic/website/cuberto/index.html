@@ -11,13 +11,224 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css"
       rel="stylesheet" />
 
+    <!-- Shery js cdn css -->
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="main" class="main">
-      <!-- Start hero area Section -->
-      <section class="hero_area" id="hero"></section>
-      <!-- End hero area Section -->
+    <div id="main" class="main w-full bg-white py-[3vh] px-[3vw]">
+      <!-- Start homepage area Section -->
+      <section class="homepage" id="homepage">
+        <!-- header -->
+        <header class="flex items-center justify-between">
+          <a href="#" class="logo magnet font-AvertaCYBold">cuberto</a>
+          <nav class="flex gap-5">
+            <a href="#">our showreel</a>
+            <a href="#">menu</a>
+            <i class="ri-menu-fill cursor-pointer magnet"></i>
+          </nav>
+        </header>
+        <!-- end of header -->
+
+        <!-- hero text -->
+        <div class="hero_text">
+          <h4 class="font-bold">We make it happen</h4>
+          <div class="hero_title">
+            <h1 class="hover_video">Websites</h1>
+            <h1 class="hover_video">App</h1>
+            <h1 class="hover_video">Branding</h1>
+          </div>
+        </div>
+        <!-- end of hero text -->
+
+        <!-- hero text bottom -->
+        <div
+          class="hero_text_bottom pl-[10vw] pr-[20vw] lg:pr-[43vw] font-bold selection:bg-black selection:text-white select-all">
+          <p>
+            Leading digital agency with design and development expertise. We
+            build readymade websites, mobile applications, and elaborate online
+            business services.
+          </p>
+        </div>
+        <!-- end of hero text bottom -->
+      </section>
+      <!-- End homepage area Section -->
+
+      <!-- Start feature area Section -->
+      <section class="feature_area pt-[5vh] px-[10vw]" id="feature">
+        <div class="feature_title">
+          <h1 class="font-AvertaCYBold">featured</h1>
+          <h1 class="text_strock">projects</h1>
+        </div>
+        <!-- end of feature title -->
+
+        <!-- feature wrapper -->
+        <div
+          class="feature_wrapper w-full h-screen pt-[3vh] flex justify-between">
+          <!-- feature content -->
+          <div class="feature_content w-[50%] overflow-hidden">
+            <!-- single feature content 01 -->
+            <div class="single_feature h-full flex flex-col justify-center">
+              <h4 class="font-semibold">Riyadh</h4>
+              <h1 class="text-[2.5vw] my-5 tracking-tight font-bold">
+                Official website of Riyadh, Saudi Arabia's capital
+              </h1>
+              <h5 class="bg-opacity-40">design, development, product</h5>
+            </div>
+            <!-- end of single feature content 01 -->
+
+            <!-- single feature content 02 -->
+            <div class="single_feature h-full flex flex-col justify-center">
+              <h4 class="font-semibold">Ferrumpipe</h4>
+              <h1 class="text-[2.5vw] my-5 tracking-tight font-bold">
+                Galvanized steel metal frame manufacturer
+              </h1>
+              <h5 class="bg-opacity-40">
+                branding, design, development, product
+              </h5>
+            </div>
+            <!-- end of single feature content 02 -->
+
+            <!-- single feature content 03 -->
+            <div class="single_feature h-full flex flex-col justify-center">
+              <h4 class="font-semibold">Nana Asia</h4>
+              <h1 class="text-[2.5vw] my-5 tracking-tight font-bold">
+                Asia's digital magazine, powered by women
+              </h1>
+              <h5 class="bg-opacity-40">web, design, development</h5>
+            </div>
+            <!-- end of single feature content 03 -->
+
+            <!-- single feature content 04 -->
+            <div
+              class="single_feature last h-full flex flex-col justify-center">
+              <h4 class="font-semibold">Sleepiest</h4>
+              <h1 class="text-[2.5vw] my-5 tracking-tight font-bold">
+                Sleep app helps millions fall asleep every night
+              </h1>
+              <h5 class="bg-opacity-40">branding, design, mobile, product</h5>
+            </div>
+            <!-- end of single feature content 04 -->
+          </div>
+          <!-- end of feature content -->
+
+          <!-- feature images -->
+          <div
+            class="feature_images w-[45%] h-full flex items-center justify-end">
+            <div class="images bg-zinc-400 h-[90%] w-[90%]">
+              <img
+                src="./src/assest/images/image_1.jpg"
+                class="w-full h-full object-cover border-2 border-red-500" />
+              <img
+                src="./src/assest/images/image_2.jpg"
+                class="w-full h-full object-cover" />
+              <img
+                src="./src/assest/images/image_3.jpg"
+                class="w-full h-full object-cover" />
+              <img
+                src="https://images.unsplash.com/photo-1702700485044-652cbbd41fde?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0M3x8fGVufDB8fHx8fA%3D%3D"
+                class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <!-- end of feature images -->
+        </div>
+        <!-- end of feature wrapper -->
+
+        <div class="view_btn w-full flex items-center justify-center py-[8vh]">
+          <button
+            class="magnet px-[3vw] py-[1vh] border-2 border-gray-400 rounded-full font-AvertaCYBold tracking-tight">
+            view all products
+          </button>
+        </div>
+        <!-- end of button div -->
+      </section>
+      <!-- End feature area Section -->
+
+      <!-- Start development area Section -->
+      <section class="development_area" id="development">
+        <div class="w-1/2 py-[10vh] px-[10vw]">
+          <h1 class="text-[4vw] leading-none mb-5 font-bold">
+            Development and design resources
+          </h1>
+          <p>
+            We regularly release design courses, offer advice to newbie
+            designers, walk you through creating awesome effects, and share
+            source files.
+          </p>
+        </div>
+        <!-- end of development info -->
+
+        <!-- sliders -->
+        <div class="sliders flex flex-wrap justify-between">
+          <!-- single slider 01 -->
+          <div class="single_slider w-full lg:w-[30%]">
+            <div class="slider_img w-full bg-gray-400">
+              <img
+                src="https://cdn.cuberto.com/cb/upload/40bf072f506912f62412b0de381e350d.png"
+                class="w-full h-full object-cover" />
+            </div>
+            <a
+              href="#"
+              class="tag capitalize bg-zinc-200 my-4 py-[1vh] px-[2vw] rounded-full font-bold inline-block text-sm"
+              >design course</a
+            >
+            <h2
+              class="slider_title capitalize font-bold text-lg font-AvertaCYBold">
+              how to make epic website // frontend development
+            </h2>
+          </div>
+          <!-- end of single slider 01 -->
+
+          <!-- single slider 02 -->
+          <div class="single_slider w-full lg:w-[30%]">
+            <div class="slider_img w-full bg-gray-400">
+              <img
+                src="https://cdn.cuberto.com/cb/upload/40bf072f506912f62412b0de381e350d.png"
+                class="w-full h-full object-cover" />
+            </div>
+            <a
+              href="#"
+              class="tag capitalize bg-zinc-200 my-4 py-[1vh] px-[2vw] rounded-full font-bold inline-block text-sm"
+              >dev source</a
+            >
+            <h2
+              class="slider_title capitalize font-bold text-lg font-AvertaCYBold">
+              cuberto mouse follower
+            </h2>
+          </div>
+          <!-- end of single slider 02 -->
+
+          <!-- single slider 03 -->
+          <div class="single_slider w-full lg:w-[30%]">
+            <div class="slider_img w-full bg-gray-400">
+              <img
+                src="https://cdn.cuberto.com/cb/upload/40bf072f506912f62412b0de381e350d.png"
+                class="w-full h-full object-cover" />
+            </div>
+            <a
+              href="#"
+              class="tag capitalize bg-zinc-200 my-4 py-[1vh] px-[2vw] rounded-full font-bold inline-block text-sm"
+              >dev course</a
+            >
+            <h2
+              class="slider_title capitalize font-bold text-lg font-AvertaCYBold">
+              making switch with SVG design
+            </h2>
+          </div>
+          <!-- end of single slider 03 -->
+        </div>
+        <!-- end of sliders -->
+
+        <div class="magnet view_btn w-full flex items-center justify-center py-[8vh]">
+          <button
+            class="px-[3vw] py-[1vh] border-2 border-gray-400 rounded-full font-AvertaCYBold tracking-tight">
+            view all products
+          </button>
+        </div>
+        <!-- end of button div -->
+      </section>
+      <!-- End development area Section -->
 
       <!-- Start hero area Section -->
       <!-- <section class="hero_area" id="hero"></section> -->
@@ -25,6 +236,20 @@
     </div>
     <!-- end of main div -->
 
+    <!--  Gsap is needed for Basic Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Three.js is needed for 3d Effects -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.159.0/three.min.js"
+      integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <!-- Shery js cdn -->
+    <script src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
     <!-- Main Js -->
     <script src="./src/assest/javascript/main.js"></script>
   </body>

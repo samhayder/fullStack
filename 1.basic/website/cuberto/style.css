@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: "AvertaCY-Bold";
+  src: url(./src/assest/fonts/AvertaCY-Bold.ttf);
+}
+@font-face {
   font-family: "AvertaCY-Light";
   src: url(./src/assest/fonts/AvertaCY-Light.ttf);
 }
@@ -10,3 +14,38 @@
 .main {
   @apply font-AvertaCY;
 }
+
+/* Homepage CSS */
+.hero_text {
+  @apply py-[30vh] px-[10vw];
+}
+
+.hero_title {
+  @apply flex gap-3 ;
+}
+
+.hero_title h1 {
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  font-size: 7vw;
+  font-family: "AvertaCY-Bold";
+  /* letter-spacing: -5px; */
+  line-height: 1;
+  transition: all 0.5s ease;
+}
+.hero_title h1:hover {
+  color: #000;
+}
+
+/* Feature CSS */
+.feature_title h1 {
+  font-size: 4vw;
+}
+.text_strock {
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  line-height: 1;
+}
+
+
+
